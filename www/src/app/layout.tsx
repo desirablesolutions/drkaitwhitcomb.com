@@ -1,4 +1,4 @@
-import './globals.css'
+import '@libs/globals.css'
 import NavBar from "@includes/NavBar"
 import Footer from "@includes/Footer"
 
