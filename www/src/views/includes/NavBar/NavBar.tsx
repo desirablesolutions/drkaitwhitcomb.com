@@ -1,3 +1,18 @@
+export type NavBarProps = {
+  links?: any,
+}
+
+export const defaultProps = {
+  links: [
+    {
+      title: "Home",
+
+    },
+    {
+      title: "About",
+    }
+  ]
+}
 export default function NavBar() {
 
   const Link = ({ title }: any) => {
