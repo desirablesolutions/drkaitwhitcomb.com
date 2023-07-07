@@ -1,4 +1,4 @@
-"use client"
+
 import "@libs/globals.css";
 
 import NavBar from "@includes/NavBar";
