@@ -1,20 +1,17 @@
 import Item from "./Item";
 
-
-export type MasonryProps = {
-
-}
-
+export type MasonryProps = {};
 
 export default function Masonry(props: any) {
-
   const ContainerSx = (props: {
     gap: number;
     cols: number;
     isGroup: boolean;
   }) => {
     let { gap, cols, isGroup } = props;
-    return `gap-${gap} grid grid-cols-2 ${cols} ${isGroup ? "group" : ""} w-full place-items-center`;
+    return `gap-${gap} grid grid-cols-2 ${cols} ${
+      isGroup ? "group" : ""
+    } w-full place-items-center`;
   };
 
   const images = {
@@ -31,58 +28,102 @@ export default function Masonry(props: any) {
   };
 
   return (
-    <div className={ContainerSx({ gap: 2, cols: 2, isGroup: true })}>
-      <div
-        
-        className={ContainerSx({ gap: 2, cols: 2, isGroup: true })}
-      >
-        <Item>
-          <img
-            className="object-contain w-full h-full "
-            src={images.profile}
-            alt=""
-          />
-        </Item>
-        <Item>
-          <img
-            className="h-auto min-w-full "
-            src={images.landscape}
-            alt=""
-          />
-        </Item>
-        <Item>
-          <img
-            className="h-auto min-w-full "
-            src={images.office}
-            alt=""
-          />
-        </Item>
-
-        <Item>
-          <img
-            className="h-auto min-w-full "
-            src={images.flowers}
-            alt=""
-          />
-        </Item>
-
-        <Item>
-          <div className="flex p-8">
-            <h3 className="w-1/2">
-              Individual therapy from a licensed psychologist I work with adult
-              clients to help them find the healing they’re looking for. I’m
-              glad you’re here! Learn more
-            </h3>
-          </div>
-        </Item>
-
-        <Item>
-          Dr. Kait Whitcomb, LLC therapy@drkaitwhitcomb.com Phone: (407)
-          493-2238 Fax: (407) 542-1804
-        </Item>
-
-        <Item>Office and Telehealth Visits Available</Item>
-      </div>
+  
+<div className="grid grid-cols-2 gap-2 mt-28">
+  <div className="grid gap-4">
+    <Item>
+      <img
+        className="h-auto min-w-full rounded-sm"
+        src={images.profile}
+        alt=""
+      />
+    </Item>
+    <div>
+      <img
+        className="h-auto max-w-full rounded-lg"
+        src={images.profile}
+        alt=""
+      />
     </div>
+    <div>
+      <img
+        className="h-auto max-w-full rounded-lg"
+        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+  <div className="grid gap-4">
+    <div>
+      <img
+        className="h-auto max-w-full rounded-lg"
+        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
+        alt=""
+      />
+    </div>
+    <div>
+      <img
+        className="h-auto max-w-full rounded-lg"
+        src={images.profile}
+        alt=""
+      />
+    </div>
+    <div>
+      <img
+        className="h-auto max-w-full rounded-lg"
+        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+  <div className="grid gap-4">
+    <div>
+      <img
+        className="h-auto max-w-full rounded-lg"
+        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
+        alt=""
+      />
+    </div>
+    <div>
+      <img
+        className="h-auto max-w-full rounded-lg"
+        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
+        alt=""
+      />
+    </div>
+    <div>
+      <img
+        className="h-auto max-w-full rounded-lg"
+        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+  <div className="grid gap-4">
+    <div>
+      <img
+        className="h-auto max-w-full rounded-lg"
+        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
+        alt=""
+      />
+    </div>
+    <div>
+      <img
+        className="h-auto max-w-full rounded-lg"
+        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
+        alt=""
+      />
+    </div>
+    <div>
+      <img
+        className="h-auto max-w-full rounded-lg"
+        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+</div>
+
+
   );
 }
