@@ -31,16 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <NavBar />
-        <motion.main
-          variants={variants} // Pass the variant object into Framer Motion
-          initial="hidden" // Set the initial state to variants.hidden
-          animate="enter" // Animated state to variants.enter
-          exit="exit" // Exit state (used later) to variants.exit
-          transition={{ type: "easeInOut" }} // Set the transition to linear
-          className="flex items-center justify-center"
-        >
-          {children}
-        </motion.main>
+        {children}
 
         <Footer />
       </body>
