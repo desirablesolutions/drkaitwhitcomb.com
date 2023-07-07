@@ -1,11 +1,13 @@
 import '@libs/globals.css'
+
 import NavBar from "@includes/NavBar"
 import Footer from "@includes/Footer"
 
 export const metadata = {
-  title: 'Dr. Kait Whitcomb',
+  title: 'Dr. Kait Whitcomb | Psychologist',
   description: 'Licensed therapist',
 }
+
 
 export default function RootLayout({
   children,
@@ -22,3 +24,5 @@ export default function RootLayout({
     </html>
   )
 }
+
+

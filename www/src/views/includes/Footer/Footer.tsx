@@ -1,6 +1,6 @@
 
 export type FooterProps = {
-    copyright: string
+    copyright?: string
 }
 
 export default function Footer({ copyright }: FooterProps) {
@@ -8,7 +8,7 @@ export default function Footer({ copyright }: FooterProps) {
     const Copyright = () => {
         return (
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-                {copyright}
+                {copyright ?? "© 2022 Kait Whitcomb"}
             </span>
         )
     }
