@@ -2,10 +2,20 @@ export type FooterProps = {
   copyright?: string;
 };
 
+const defaultProps = {
+  copyright: "© 2022 Kait Whitcomb",
+  links: [
+    {
+      title: "Home",
+      url: "/",
+    }
+  ]
+}
+
 export default function Footer({ copyright }: FooterProps) {
   const Copyright = () => {
     return (
-      <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+      <span className="m-2 text-sm text-black sm:text-center">
         {copyright ?? "© 2022 Kait Whitcomb"}
       </span>
     );
@@ -14,7 +24,7 @@ export default function Footer({ copyright }: FooterProps) {
     const Link = () => {
       return (
         <li>
-          <a href="#" className="mr-4 hover:underline md:mr-6">
+          <a href="#" className="mr-4 text-black hover:underline md:mr-6">
             About
           </a>
         </li>
@@ -28,7 +38,8 @@ export default function Footer({ copyright }: FooterProps) {
   };
 
   return (
-    <footer className="w-full p-4 border-t border-gray-200 shadow relative-20 md:flex md:items-center md:justify-between md:p-6 dark:border-gray-600">
+    <footer className="w-full p-6 border-t border-black backdrop-blur-md relative-20 md:flex md:items-center md:justify-between md:p-6 dark:border-gray-600">
+      <Copyright />
       <Copyright />
       <Links />
     </footer>

@@ -31,25 +31,28 @@ export default function NavBar() {
   const Link = ({ title , url}: any) => {
     return (
       <a
-        className="flex items-center content-center justify-center mt-2 text-center border-r border-black"
+        className="flex items-center content-center justify-center mt-2 text-center border-r border-black group"
         href={url ?? ""}
       >
-        <span className="relative pr-10 text-black ">{title ?? "Home"}</span>
+        <span className="relative pr-10 mr-0 text-black duration-500 group-hover:-transpate-y-2 hover:text-shadow shadow-black whitespace-nowrap hover:text-white">{title ?? "Home"}</span>
       </a>
     );
   };
 
   return (
-    <header className="relative flex flex-col items-center justify-center w-full h-64 backdrop-blur-sm">
+    <header className="relative flex flex-col items-center justify-center w-full h-64 backdrop-blur-md">
       <main className="flex justify-center w-full border-b border-black">
         <div>
-          <img
-            src="https://static.wixstatic.com/media/254c65_f4b64d6d825546f186dc0a4358ffa178~mv2.png/v1/fill/w_346,h_154,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Kait%20Whitcomb%20logo-04.png"
+         <a href="/">
+         <img
+         className="object-contain h-24 pb-4"
+            src="/logo.png"
             alt="logo"
           />
+         </a>
         </div>
       </main>
-      <div className="flex justify-center w-full gap-8 mt-4 border-black border-opacity-100 border-seperate border-1">
+      <div className="flex justify-center w-full gap-8 mt-4 overflow-x-auto border-black border-opacity-100 no-scrollbar border-seperate border-1">
         {defaultProps.links.map((i) => (
           <Link key={i} {...i} />
         ))}
