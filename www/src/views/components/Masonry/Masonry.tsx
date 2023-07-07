@@ -1,9 +1,12 @@
 import Item from "./Item";
 
-export default function Masonry(props: any) {
-  let { grids } = props;
 
-  const ratio = [];
+export type MasonryProps = {
+
+}
+
+
+export default function Masonry(props: any) {
 
   const ContainerSx = (props: {
     gap: number;
@@ -11,7 +14,7 @@ export default function Masonry(props: any) {
     isGroup: boolean;
   }) => {
     let { gap, cols, isGroup } = props;
-    return `gap-${gap} grid grid-cols-${cols} ${isGroup ? "group" : ""}`;
+    return `gap-${gap} grid grid-cols-2 ${cols} ${isGroup ? "group" : ""} w-full place-items-center`;
   };
 
   const images = {
@@ -28,28 +31,28 @@ export default function Masonry(props: any) {
   };
 
   return (
-    <div className={ContainerSx({ gap: 2, cols: 1, isGroup: true })}>
+    <div className={ContainerSx({ gap: 2, cols: 2, isGroup: true })}>
       <div
         
-        className={ContainerSx({ gap: 2, cols: 2, isGroup: false })}
+        className={ContainerSx({ gap: 2, cols: 2, isGroup: true })}
       >
         <Item>
           <img
-            className="w-auto h-auto rounded-lg"
+            className="object-contain w-full h-full "
             src={images.profile}
             alt=""
           />
         </Item>
         <Item>
           <img
-            className="h-auto min-w-full rounded-lg"
+            className="h-auto min-w-full "
             src={images.landscape}
             alt=""
           />
         </Item>
         <Item>
           <img
-            className="h-auto min-w-full rounded-lg"
+            className="h-auto min-w-full "
             src={images.office}
             alt=""
           />
@@ -57,7 +60,7 @@ export default function Masonry(props: any) {
 
         <Item>
           <img
-            className="h-auto min-w-full rounded-lg"
+            className="h-auto min-w-full "
             src={images.flowers}
             alt=""
           />

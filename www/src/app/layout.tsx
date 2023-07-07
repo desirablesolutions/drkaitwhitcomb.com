@@ -37,7 +37,7 @@ export default function RootLayout({
           animate="enter" // Animated state to variants.enter
           exit="exit" // Exit state (used later) to variants.exit
           transition={{ type: "easeInOut" }} // Set the transition to linear
-          className=""
+          className="flex items-center justify-center"
         >
           {children}
         </motion.main>
