@@ -6,18 +6,33 @@ export const defaultProps = {
   links: [
     {
       title: "Home",
+      url: "/"
     },
     {
-      title: "About",
+      title: "About Me",
+      url: "/about"
+    },
+    {
+      title: "Services",
+      url: "/services"
+      
+    },
+    {
+      title: "Contact",
+      url: "/contact"
+    },
+    {
+      title: "Resources",
+      url: "/resources"
     },
   ],
 };
 export default function NavBar() {
-  const Link = ({ title }: any) => {
+  const Link = ({ title , url}: any) => {
     return (
       <a
-        className="flex items-center content-center justify-center mt-2 text-center border-r-2 border-black"
-        href="/about"
+        className="flex items-center content-center justify-center mt-2 text-center border-r border-black"
+        href={url ?? ""}
       >
         <span className="relative pr-10 text-black ">{title ?? "Home"}</span>
       </a>
@@ -34,9 +49,9 @@ export default function NavBar() {
           />
         </div>
       </main>
-      <div className="flex justify-center w-full gap-12 border-t border-black border-opacity-100 border-seperate border-1">
-        {new Array(5).fill({}).map((i) => (
-          <Link key={i} />
+      <div className="flex justify-center w-full gap-8 mt-4 border-black border-opacity-100 border-seperate border-1">
+        {defaultProps.links.map((i) => (
+          <Link key={i} {...i} />
         ))}
       </div>
     </header>
