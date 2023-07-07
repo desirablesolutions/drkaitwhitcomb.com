@@ -1,3 +1,6 @@
+"use client";
+import { motion } from "framer-motion";
+
 import Item from "./Item";
 
 export type MasonryProps = {};
@@ -14,6 +17,18 @@ export default function Masonry(props: any) {
     } w-full place-items-center`;
   };
 
+  const variants = {
+    hidden: { opacity: 0 },
+    enter: { opacity: 1 },
+    show: {
+      transition: {
+        staggerChildren: 0.9,
+        delayChildren: 1.3,
+      },
+    },
+    exit: { opacity: 0 },
+  };
+
   const images = {
     overlooking:
       "https://static.wixstatic.com/media/148286_e7602f25ebe7452b90aaca2b0248d6c2~mv2.jpg/v1/fill/w_819,h_543,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Bookshelf_JPG.jpg",
@@ -28,57 +43,56 @@ export default function Masonry(props: any) {
   };
 
   return (
-  
-<div className="grid grid-cols-2 gap-2 mt-28">
-  <div className="grid gap-4">
-    <Item>
-      <img
-        className="h-auto min-w-full rounded-sm"
-        src={images.profile}
-        alt=""
-      />
-    </Item>
-    <Item>
-      <img
-        className="h-auto max-w-full rounded-lg"
-        src={images.landscape}
-        alt=""
-      />
-    </Item>
-    <Item>
-      <img
-        className="h-auto max-w-full rounded-lg"
-        src={images.overlooking}
-        alt=""
-      />
-    </Item>
-  </div>
-  <div className="grid gap-4">
-    <Item>
-      <img
-        className="h-full max-w-full rounded-lg"
-        src={images.flowers}
-        alt=""
-      />
-    </Item>
-    <Item>
-      <img
-        className="h-auto max-w-full rounded-lg"
-        src={images.profile}
-        alt=""
-      />
-    </Item>
-    <Item>
-      <img
-        className="h-auto max-w-full rounded-lg"
-        src={images.profile}
-        alt=""
-      />
-    </Item>
-  </div>
-
-</div>
-
-
+    <motion.main
+      variants={variants} // Pass the variant object into Framer Motion
+      initial="hidden" // Set the initial state to variants.hidden
+      animate="enter" // Animated state to variants.enter
+      exit="exit" // Exit state (used later) to variants.exit
+      transition={{ type: "linear" }} // Set the transition to linear
+      className=""
+    >
+      <div className="grid grid-cols-2 gap-2 mt-28">
+        <div className="grid gap-4">
+          <Item>
+            <h2 className="p-6 text-4xl text-center">
+              Individual therapy from a licensed psychologist I work with adult
+              clients to help them find the healing they’re looking for. I’m
+              glad you’re here! Learn more
+            </h2>
+          </Item>
+          <Item>
+            <img className="w-full h-full " src={images.landscape} alt="" />
+          </Item>
+          <Item>
+          <h2 className="p-6 text-4xl text-center">
+          Office and Telehealth Visits Available
+            </h2>
+           </Item>
+          <Item>
+            <img
+              className="object-cover w-full h-full"
+              src={images.overlooking}
+              alt=""
+            />
+          </Item>
+        </div>
+        <div className="grid gap-4">
+          <Item>
+            <img className="w-full h-full" src={images.flowers} alt="" />
+          </Item>
+          <Item>
+            <img className="w-full h-full" src={images.profile} alt="" />
+          </Item>
+          <Item>
+            <h2 className="p-6 text-4xl text-center">
+              Dr. Kait Whitcomb, LLC <br/>
+              therapy@drkaitwhitcomb.com<br/>
+              Phone: (407) 493-2238 <br/>
+              Fax: (407) 542-1804
+            </h2>
+          </Item>
+        </div>
+      </div>
+    </motion.main>
   );
 }

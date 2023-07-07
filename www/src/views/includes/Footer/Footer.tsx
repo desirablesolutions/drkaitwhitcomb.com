@@ -3,7 +3,7 @@ export type FooterProps = {
   tag?: string,
 };
 
-const defaultProps = {
+export const defaultProps = {
   copyright: "© 2022 Kait Whitcomb",
   tag: "Made w/ ❤️ by Desirable Solutions",
   links: [
@@ -46,7 +46,7 @@ export default function Footer({ copyright, tag }: FooterProps) {
       return (
         <li>
           <a href="#" className="mr-4 text-black hover:underline md:mr-6">
-            {name}
+           {`${name}`}
           </a>
         </li>
       );
@@ -55,7 +55,7 @@ export default function Footer({ copyright, tag }: FooterProps) {
       <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
        {
         defaultProps.links.map((link) => (
-          <Link name={link.name} key={Date.now()}/>
+          <Link {...link} key={Date.now()}/>
         ))}
       </ul>
     );
@@ -65,6 +65,7 @@ export default function Footer({ copyright, tag }: FooterProps) {
     <footer className="w-full p-6 border-t border-black backdrop-blur-md relative-20 md:flex md:items-center md:justify-between md:p-6 dark:border-gray-600">
       <Tag />
       <Copyright />
+      <Links/>
  
     </footer>
   );
