@@ -38,90 +38,45 @@ export default function Masonry(props: any) {
         alt=""
       />
     </Item>
-    <div>
+    <Item>
+      <img
+        className="h-auto max-w-full rounded-lg"
+        src={images.landscape}
+        alt=""
+      />
+    </Item>
+    <Item>
+      <img
+        className="h-auto max-w-full rounded-lg"
+        src={images.overlooking}
+        alt=""
+      />
+    </Item>
+  </div>
+  <div className="grid gap-4">
+    <Item>
+      <img
+        className="h-full max-w-full rounded-lg"
+        src={images.flowers}
+        alt=""
+      />
+    </Item>
+    <Item>
       <img
         className="h-auto max-w-full rounded-lg"
         src={images.profile}
         alt=""
       />
-    </div>
-    <div>
-      <img
-        className="h-auto max-w-full rounded-lg"
-        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
-        alt=""
-      />
-    </div>
-  </div>
-  <div className="grid gap-4">
-    <div>
-      <img
-        className="h-auto max-w-full rounded-lg"
-        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
-        alt=""
-      />
-    </div>
-    <div>
+    </Item>
+    <Item>
       <img
         className="h-auto max-w-full rounded-lg"
         src={images.profile}
         alt=""
       />
-    </div>
-    <div>
-      <img
-        className="h-auto max-w-full rounded-lg"
-        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
-        alt=""
-      />
-    </div>
+    </Item>
   </div>
-  <div className="grid gap-4">
-    <div>
-      <img
-        className="h-auto max-w-full rounded-lg"
-        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
-        alt=""
-      />
-    </div>
-    <div>
-      <img
-        className="h-auto max-w-full rounded-lg"
-        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
-        alt=""
-      />
-    </div>
-    <div>
-      <img
-        className="h-auto max-w-full rounded-lg"
-        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
-        alt=""
-      />
-    </div>
-  </div>
-  <div className="grid gap-4">
-    <div>
-      <img
-        className="h-auto max-w-full rounded-lg"
-        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
-        alt=""
-      />
-    </div>
-    <div>
-      <img
-        className="h-auto max-w-full rounded-lg"
-        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
-        alt=""
-      />
-    </div>
-    <div>
-      <img
-        className="h-auto max-w-full rounded-lg"
-        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
-        alt=""
-      />
-    </div>
-  </div>
+
 </div>
 
 

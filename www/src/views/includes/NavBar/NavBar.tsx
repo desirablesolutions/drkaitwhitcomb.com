@@ -40,7 +40,7 @@ export default function NavBar() {
   };
 
   return (
-    <header className="fixed top-0 left-0 flex flex-col items-center justify-center w-full h-48 backdrop-blur-md">
+    <header className="fixed top-0 left-0 z-40 flex flex-col items-center justify-center w-full h-48 backdrop-blur-md">
       <main className="flex justify-center w-full border-b border-black">
         <div>
          <a href="/">
