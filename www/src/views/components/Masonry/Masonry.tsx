@@ -48,10 +48,10 @@ export default function Masonry(props: any) {
       initial="hidden" // Set the initial state to variants.hidden
       animate="enter" // Animated state to variants.enter
       exit="exit" // Exit state (used later) to variants.exit
-      transition={{ type: "linear" }} // Set the transition to linear
+      transition={{ type: "easeInOut", duration: 1.1, staggerChildren: 0.67, staggerDirection: 1 }} // Set the transition to linear
       className=""
     >
-      <div className="grid grid-cols-2 gap-2 mt-28">
+      <div className="grid gap-2 lg:grid-cols-2 sm:grid-cols-1 mt-28">
         <div className="grid gap-4">
           <Item>
             <h2 className="p-6 text-4xl text-center">
@@ -61,7 +61,7 @@ export default function Masonry(props: any) {
             </h2>
           </Item>
           <Item>
-            <img className="w-full h-full " src={images.landscape} alt="" />
+            <img className="w-full h-full " src={images.profile} alt="" />
           </Item>
           <Item>
           <h2 className="p-6 text-4xl text-center">
