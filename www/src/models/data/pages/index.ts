@@ -7,29 +7,10 @@ export const pages: any = {
             masonry: {
                 container: {
                     gap: 2,
+                    cols: 1
                 },
-                items: [
-                    {
-                        text: "Home Page",
-                    },
-                ],
+
                 grids: [
-                    {
-                        items: [
-                            {
-                                type: "image",
-                                src: images.profile,
-                            },
-                            {
-                                type: "image",
-                                src: images.profile,
-                            },
-                            {
-                                type: "image",
-                                src: images.profile,
-                            },
-                        ],
-                    },
                     {
                         items: [
                             {
@@ -37,6 +18,11 @@ export const pages: any = {
                                 content: `Individual therapy from a licensed psychologist I work with adult
                           clients to help them find the healing they’re looking for. I’m glad you’re here! Learn more`
                             },
+                            {
+                                type: "image",
+                                src: images.profile,
+                            },
+
 
                             {
                                 type: "text",
@@ -46,6 +32,19 @@ export const pages: any = {
                                 Phone: (407) 493-2238 <br />
                                 Fax: (407) 542-1804`
                             }
+                        ],
+                    },
+                    {
+                    
+                        items: [
+                            { 
+                                type: "image",
+                                src: images.flowers
+                            },
+                            { 
+                                type: "image",
+                                src: images.flowers
+                            },
                         ],
                     },
                 ],
@@ -75,7 +74,7 @@ export const pages: any = {
                                 type: "image",
                                 src: images.office,
                             },
-                       
+
                         ],
                     },
                     {
@@ -168,7 +167,7 @@ export const pages: any = {
                                 type: "image",
                                 src: images.overlooking,
                             },
-                        
+
                         ],
                     },
                     {
@@ -211,7 +210,7 @@ export const pages: any = {
                                 type: "image",
                                 src: images.flowers,
                             },
-                    
+
                         ],
                     },
                     {

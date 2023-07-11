@@ -1,9 +1,11 @@
-export default function Container(props: any) {
+import type { MasonryContainerProps } from "@typings/index";
 
-  let { children, sx } = props;
+export default function Container(props: MasonryContainerProps & { children: React.ReactNode }) {
+
+  let { children, cols, gap } = props;
 
   return (
-    <div className="grid gap-2 lg:grid-cols-2 sm:grid-cols-1">
+    <div className={`grid ${cols ? "grid-cols-" + cols : ""} ${gap ? "gap-" + gap : ""} lg:grid-cols-2 sm:grid-cols-1`}>
       {children}
     </div>
   );

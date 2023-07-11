@@ -26,7 +26,7 @@ export default function Masonry(props: MasonryProps) {
   };
   function renderItems(items: Weak<MasonryItemProps[]>) {
     if (!arrayExists(items)) {
-      return <>No Items</>;
+      return null;
     } else {
       return (
         <>
@@ -39,8 +39,6 @@ export default function Masonry(props: MasonryProps) {
               case "text": {
                 return Templates.text(item);
               }
-
-      
             }
           })}
         </>
@@ -59,7 +57,7 @@ export default function Masonry(props: MasonryProps) {
               <Grid key={tuid()}>
                 {arrayExists(grid?.grids)
                   ? renderGrids(grid?.grids)
-                  : renderItems(grid.items)}
+                  : renderItems(grid?.items)}
               </Grid>
             );
           })}
@@ -70,10 +68,8 @@ export default function Masonry(props: MasonryProps) {
 
   return (
     <Container {...container}>
-      <Reanimator>
-        {renderItems(items)}
-        {renderGrids(grids)}
-      </Reanimator>
+      {renderItems(items)}
+      {renderGrids(grids)}
     </Container>
   );
 }

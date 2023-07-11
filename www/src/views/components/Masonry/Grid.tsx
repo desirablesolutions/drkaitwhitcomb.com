@@ -1,12 +1,8 @@
-export type GridProps = {
-  children?: any;
-};
-
-export default function Grid(props: GridProps) {
+import type { MasonryGridProps } from "@typings/index";
+export default function Grid(
+  props: MasonryGridProps & { children: React.ReactNode }
+) {
   let { children } = props;
 
-  return    <div className="grid gap-4">
-{children }
-</div>
-
+  return <div className="grid gap-4">{children}</div>;
 }
