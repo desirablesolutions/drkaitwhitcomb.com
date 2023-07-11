@@ -23,6 +23,8 @@
       "@/*": ["./src/*"],
       "@includes/*": ["./src/views/includes/*"],
       "@components/*": ["./src/views/components/*"],
+      "@utils/*": ["./src/controllers/utils/*"],
+      "@typings/*": ["./src/models/typings/*"],
       "@libs/*": ["./src/views/libs/*"]
 
     }

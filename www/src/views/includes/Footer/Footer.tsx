@@ -14,7 +14,7 @@ export default function Footer({ copyright, tag }: FooterProps) {
    const defaultProps = {
     copyright: [
       "Made w/ ❤️ by Desirable Solutions",
-      "678-323-2323",
+      "(407) 493-2238",
       "take a deep breath",
       "therapy@drkaitwhitcomb.com",
     ],
