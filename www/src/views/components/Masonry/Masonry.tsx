@@ -40,9 +40,7 @@ export default function Masonry(props: MasonryProps) {
                 return Templates.text(item);
               }
 
-              default: {
-                return <h1>Hello World</h1>;
-              }
+      
             }
           })}
         </>

@@ -1,12 +1,9 @@
+import { PageService } from "@services/page"
+export async function usePage(id: string) {
 
-export async function usePage(id: string, opts?: any) {
+    const { getPage } = PageService()
 
-    const { pageData, metaData, version } = {
-        pageData: undefined,
-        metaData: undefined,
-        version: undefined
-    }
-    return {
-     pageData, metaData, version
-    }
+    const pageQuery = await getPage(id)
+
+    return { ...pageQuery, version: Date.now() }
 }

@@ -1,7 +1,106 @@
-export const pages = {
+import { images } from "@assets/images"
 
-    home: {
-        meta: {},
+export const pages: any = {
+    "home": {
+        layout: {},
+        data: {
+            masonry: {
+                container: {
+                    gap: 2,
+                },
+                items: [
+                    {
+                        text: "Home Page",
+                    },
+                ],
+                grids: [
+                    {
+                        items: [
+                            {
+                                type: "image",
+                                src: images.profile,
+                            },
+                            {
+                                type: "image",
+                                src: images.profile,
+                            },
+                            {
+                                type: "image",
+                                src: images.profile,
+                            },
+                        ],
+                    },
+                    {
+                        items: [
+                            {
+                                type: "text",
+                                content: `Individual therapy from a licensed psychologist I work with adult
+                          clients to help them find the healing they’re looking for. I’m glad you’re here! Learn more`
+                            },
+
+                            {
+                                type: "text",
+                                content: ` Dr. Kait Whitcomb, LLC <br />
+                                therapy@drkaitwhitcomb.com
+                                <br />
+                                Phone: (407) 493-2238 <br />
+                                Fax: (407) 542-1804`
+                            }
+                        ],
+                    },
+                ],
+            }
+        }
+    },
+    "about": {
+        layout: {
+            metaData: {
+                pageTitle: "About Me",
+            }
+        },
+        data: {
+            masonry: {
+                container: {
+                    gap: 2,
+                },
+                items: [
+                    {
+                        text: "About Me",
+                    },
+                ],
+                grids: [
+                    {
+                        items: [
+                            {
+                                type: "image",
+                                src: images.office,
+                            },
+                       
+                        ],
+                    },
+                    {
+                        items: [
+                            {
+                                type: "text",
+                                content: `Individual therapy from a licensed psychologist I work with adult
+                          clients to help them find the healing they’re looking for. I’m glad you’re here! Learn more`
+                            },
+
+                            {
+                                type: "text",
+                                content: ` Dr. Kait Whitcomb, LLC <br />
+                                therapy@drkaitwhitcomb.com
+                                <br />
+                                Phone: (407) 493-2238 <br />
+                                Fax: (407) 542-1804`
+                            }
+                        ],
+                    },
+                ],
+            }
+        }
+    },
+    "contact": {
         data: {
             masonry: {
                 container: {
@@ -51,13 +150,92 @@ export const pages = {
             }
         }
     },
-    about: {},
-    contact: {},
-    resources: {},
-    services: {}
+    "resources": {
+        data: {
+            masonry: {
+                container: {
+                    gap: 2,
+                },
+                items: [
+                    {
+                        text: "Contact Me",
+                    },
+                ],
+                grids: [
+                    {
+                        items: [
+                            {
+                                type: "image",
+                                src: images.overlooking,
+                            },
+                        
+                        ],
+                    },
+                    {
+                        items: [
+                            {
+                                type: "text",
+                                content: `Individual therapy from a licensed psychologist I work with adult
+                          clients to help them find the healing they’re looking for. I’m glad you’re here! Learn more`
+                            },
+
+                            {
+                                type: "text",
+                                content: ` Dr. Kait Whitcomb, LLC <br />
+                                therapy@drkaitwhitcomb.com
+                                <br />
+                                Phone: (407) 493-2238 <br />
+                                Fax: (407) 542-1804`
+                            }
+                        ],
+                    },
+                ],
+            }
+        }
+    },
+    "services": {
+        data: {
+            masonry: {
+                container: {
+                    gap: 2,
+                },
+                items: [
+                    {
+                        text: "Contact Me",
+                    },
+                ],
+                grids: [
+                    {
+                        items: [
+                            {
+                                type: "image",
+                                src: images.flowers,
+                            },
+                    
+                        ],
+                    },
+                    {
+                        items: [
+                            {
+                                type: "text",
+                                content: `Individual therapy from a licensed psychologist I work with adult
+                          clients to help them find the healing they’re looking for. I’m glad you’re here! Learn more`
+                            },
+
+                            {
+                                type: "text",
+                                content: ` Dr. Kait Whitcomb, LLC <br />
+                                therapy@drkaitwhitcomb.com
+                                <br />
+                                Phone: (407) 493-2238 <br />
+                                Fax: (407) 542-1804`
+                            }
+                        ],
+                    },
+                ],
+            }
+        }
+    }
 };
 
 
-export type PageData = {
-    
-}

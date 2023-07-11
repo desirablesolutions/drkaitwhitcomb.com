@@ -24,7 +24,14 @@
       "@includes/*": ["./src/views/includes/*"],
       "@components/*": ["./src/views/components/*"],
       "@utils/*": ["./src/controllers/utils/*"],
+      "@assets/*": ["./src/models/data/assets/*"],
+
       "@typings/*": ["./src/models/typings/*"],
+      "@services/*": ["./src/controllers/services/*"],
+      "@hooks/*": ["./src/controllers/hooks/*"],
+
+      "@pages/*": ["./src/models/data/pages/*"],
+
       "@libs/*": ["./src/views/libs/*"]
 
     }
