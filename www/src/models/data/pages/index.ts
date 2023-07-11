@@ -1,7 +1,7 @@
 import { images } from "@assets/images"
 
 export const pages: any = {
-    "home": {
+    home: {
         layout: {},
         data: {
             masonry: {
@@ -35,13 +35,13 @@ export const pages: any = {
                         ],
                     },
                     {
-                    
+
                         items: [
-                            { 
+                            {
                                 type: "image",
                                 src: images.flowers
                             },
-                            { 
+                            {
                                 type: "image",
                                 src: images.flowers
                             },
@@ -99,32 +99,39 @@ export const pages: any = {
             }
         }
     },
-    "contact": {
+    contact: {
         data: {
             masonry: {
                 container: {
                     gap: 2,
+                    cols: 1
                 },
                 items: [
                     {
-                        text: "Contact Me",
+                        type: "text",
+                        content: "Contact Me",
                     },
                 ],
                 grids: [
                     {
                         items: [
                             {
-                                type: "image",
-                                src: images.profile,
+                                type: "text",
+                                content: `
+                                
+870 Clark St. ste #1020
+
+Oviedo, FL 32765
+
+ 
+
+Tel  (407) 493-2238
+
+Fax (407) 542-1804
+
+therapy@drkaitwhitcomb.com`
                             },
-                            {
-                                type: "image",
-                                src: images.profile,
-                            },
-                            {
-                                type: "image",
-                                src: images.profile,
-                            },
+
                         ],
                     },
                     {

@@ -20,10 +20,7 @@ export const defaultProps = {
       title: "Contact",
       url: "/contact",
     },
-    {
-      title: "Resources",
-      url: "/resources",
-    },
+ 
   ],
 };
 export default function NavBar(props: any) {

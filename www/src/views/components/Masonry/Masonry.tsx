@@ -22,7 +22,7 @@ export default function Masonry(props: MasonryProps) {
         <Image {...item} />
       </Item>
     ),
-    text: (item: any) => <Item>{item.content}</Item>,
+    text: (item: any) => <Item><p className="w-full">{item.content}</p>{item.content}</Item>,
   };
   function renderItems(items: Weak<MasonryItemProps[]>) {
     if (!arrayExists(items)) {
