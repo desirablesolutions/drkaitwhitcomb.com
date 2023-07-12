@@ -33,6 +33,10 @@ export default function Masonry(props: MasonryProps) {
               case "text": {
                 return Templates.text(item);
               }
+
+              case "map": {
+                return Templates.map(item);
+              }
             }
           })}
         </>

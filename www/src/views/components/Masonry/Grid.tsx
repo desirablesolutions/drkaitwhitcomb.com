@@ -4,5 +4,5 @@ export default function Grid(
 ) {
   let { children } = props;
 
-  return <div className="grid gap-">{children}</div>;
+  return <div className="grid gap-2">{children}</div>;
 }

@@ -1,10 +1,11 @@
 export type Weak<Type> = Type | undefined | null;
 
-export type MasonryItemTypes = "image" | "text";
+export type MasonryItemTypes = "image" | "text" | "map";
 
 export type MasonryItemProps =
   | ({ order?: number; type: MasonryItemTypes } & { type: "image"; src: string })
-  | { type: "text"; content: string };
+  | { type: "text"; content: string }
+  | { type: "map" };
 
 export type MasonryGridProps = MasonryProps & {
   container?: Weak<MasonryProps>

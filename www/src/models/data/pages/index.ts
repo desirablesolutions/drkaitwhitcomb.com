@@ -8,7 +8,7 @@ export const pages: any = {
             masonry: {
                 container: {
                     gap: 2,
-                    cols: 1
+                    cols: 2
                 },
 
                 grids: [
@@ -16,10 +16,8 @@ export const pages: any = {
                         items: [
                             {
                                 type: "text",
-                                content: `# Individual therapy from a licensed psychologist. 
-                                            I work with adult clients to help them find the healing they’re looking for. 
-                                            I’m glad you’re here!
-                                            > Learn more`
+                                content: `## Individual therapy from a licensed psychologist.` 
+                                           
                             },
                             {
                                 type: "image",
@@ -28,10 +26,7 @@ export const pages: any = {
                             {
                                 type: "text",
                                 content: `# Dr. Kait Whitcomb, LLC
-                               * therapy@drkaitwhitcomb.com
-                                <br />
-                               # Phone: (407) 493-2238 
-                               # Fax: (407) 542-1804`
+                               `
                             },
                             {
                                 type: "text",
@@ -45,7 +40,7 @@ export const pages: any = {
                         items: [
                             {
                                 type: "image",
-                                src: images.flowers
+                                src: images.profile
                             },
                             {
                                 type: "image",
@@ -94,16 +89,8 @@ export const pages: any = {
                             {
                                 type: "text",
                                 content: `
-                              #  Find the healing you are looking for
-                                I love helping clients make real, meaningful change that can help them achieve their goals. Using evidence-based treatments, I help clients learn to manage down days, ease anxious minds, heal past trauma, and establish better behavioral patterns.
-                                
-                                ​
-                                
-                                In every session, I try to create a welcoming environment so you can feel heard, understood, and validated. My clients have described me as warm and easy to talk to – and as someone who treats them like an individual, not a number.
-                                
-                                ​​
-                                
-                                If you think I might be a good fit, I’d love to hear from you. Please call or email me to schedule your free consultation today.`
+                              #  Find the healing you are looking for`
+                              
                             }
 
                         ],
@@ -142,6 +129,13 @@ export const pages: any = {
                         type: "text",
                         content: "Contact Me",
                     },
+                    {
+                        type: "map",
+                        center: {
+                            lat: 0,
+                            long: 0
+                        }
+                    }
                 ],
                 grids: [
                     {
@@ -150,16 +144,7 @@ export const pages: any = {
                                 type: "text",
                                 content: `                              
                                         # 870 Clark St. ste #1020
-
-Oviedo, FL 32765
-
- 
-
-Tel  (407) 493-2238
-
-Fax (407) 542-1804
-
-therapy@drkaitwhitcomb.com`
+`
                             },
 
                         ],
@@ -169,7 +154,8 @@ therapy@drkaitwhitcomb.com`
                             {
                                 type: "text",
                                 content: `Individual therapy from a licensed psychologist I work with adult
-                          clients to help them find the healing they’re looking for. I’m glad you’re here! Learn more`
+                          clients to help them find the healing they’re looking for. 
+                          ## I’m glad you’re here! Learn more`
                             },
 
                             {
@@ -211,7 +197,8 @@ therapy@drkaitwhitcomb.com`
                                 
                                 ​
                                 
-                                Each session is 50 minutes. We schedule a recurring appointment time to ensure that you receive the consistent care you need, at an interval that makes sense for you.
+                                Each session is 50 minutes. 
+                                ## We schedule a recurring appointment time to ensure that you receive the consistent care you need, at an interval that makes sense for you.
                                 
                                 ​
                                 

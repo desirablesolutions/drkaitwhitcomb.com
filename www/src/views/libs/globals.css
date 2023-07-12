@@ -29,8 +29,3 @@ body {
   background-image: linear-gradient(var(--color-primary), transparent);
 
 }
-
-
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
