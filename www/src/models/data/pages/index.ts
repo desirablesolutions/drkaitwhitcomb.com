@@ -1,5 +1,6 @@
 import { images } from "@assets/images"
 
+
 export const pages: any = {
     home: {
         layout: {},
@@ -185,50 +186,7 @@ therapy@drkaitwhitcomb.com`
             }
         }
     },
-    "resources": {
-        data: {
-            masonry: {
-                container: {
-                    gap: 2,
-                },
-                items: [
-                    {
-                        text: "Contact Me",
-                    },
-                ],
-                grids: [
-                    {
-                        items: [
-                            {
-                                type: "image",
-                                src: images.overlooking,
-                            },
-
-                        ],
-                    },
-                    {
-                        items: [
-                            {
-                                type: "text",
-                                content: `Individual therapy from a licensed psychologist I work with adult
-                          clients to help them find the healing they’re looking for. I’m glad you’re here! Learn more`
-                            },
-
-                            {
-                                type: "text",
-                                content: ` Dr. Kait Whitcomb, LLC <br />
-                                therapy@drkaitwhitcomb.com
-                                <br />
-                                Phone: (407) 493-2238 <br />
-                                Fax: (407) 542-1804`
-                            }
-                        ],
-                    },
-                ],
-            }
-        }
-    },
-    "services": {
+    services: {
         data: {
             masonry: {
                 container: {
