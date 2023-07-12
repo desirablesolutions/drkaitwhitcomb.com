@@ -52,7 +52,7 @@ export default function NavBar(props: any) {
           </a>
         </div>
       </main>
-      <div className="flex justify-center w-full gap-8 mt-4 overflow-x-auto border-black border-opacity-100 no-scrollbar border-seperate border-1">
+      <div className="flex justify-center  w-full gap-8 mt-4 overflow-x-auto border-black border-opacity-100 no-scrollbar border-seperate border-1">
         {defaultProps.links.map((i) => (
           <Link key={i} {...i} />
         ))}

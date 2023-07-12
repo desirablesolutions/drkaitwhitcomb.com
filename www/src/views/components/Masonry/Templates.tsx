@@ -21,7 +21,7 @@ export const Templates = {
     </Item>
   ),
   text: (item: any) => (
-    <Item>
+    <Item sx="hover:bg-opacity-40  duration-500 ease-in-out p-8 bg-black bg-opacity-20">
       <Markdown>{item.content}</Markdown>
     </Item>
   ),
