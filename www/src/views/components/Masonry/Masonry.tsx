@@ -1,3 +1,4 @@
+/* eslint-disable react/no-children-prop */
 "use client";
 
 import Grid from "@components/Masonry/Grid";
@@ -5,6 +6,7 @@ import Container from "@components/Masonry/Container";
 import Item from "@components/Masonry/Item";
 import Image from "@components/Image";
 import Reanimator from "@components/Reanimator";
+import Markdown from "../Markdown/Markdown";
 import type {
   Weak,
   MasonryProps,
@@ -18,11 +20,13 @@ export default function Masonry(props: MasonryProps) {
 
   const Templates = {
     image: (item: any) => (
+      <Image {...item} />
+    ),
+    text: (item: any) => (
       <Item>
-        <Image {...item} />
+        <Markdown children={item.content as string} />
       </Item>
     ),
-    text: (item: any) => <Item><p className="w-full">{item.content}</p>{item.content}</Item>,
   };
   function renderItems(items: Weak<MasonryItemProps[]>) {
     if (!arrayExists(items)) {
@@ -67,9 +71,11 @@ export default function Masonry(props: MasonryProps) {
   }
 
   return (
-    <Container {...container}>
-      {renderItems(items)}
-      {renderGrids(grids)}
-    </Container>
+    <Reanimator>
+      <Container {...container}>
+        {renderItems(items)}
+        {renderGrids(grids)}
+      </Container>
+    </Reanimator>
   );
 }

@@ -21,7 +21,7 @@ export default function Item({ children }: MasonryItemProps) {
   };
 
   const sx = `${
-    modal.open ? twMerge(modal.className, "z-10 w-auto duration-1000 ease-in-out delay-100 shadow-sm cursor-pointer backdrop-blur-sm rounded-small hover:-translate-y-2 hover:shadow-lg shadow-black"): "z-10 w-auto duration-1000 ease-in-out delay-100 shadow-sm cursor-pointer backdrop-blur-sm rounded-small hover:-translate-y-2 hover:shadow-lg shadow-black"
+    modal.open ? twMerge(modal.className, "z-10 p-4 h-auto duration-500 ease-in-out delay-100 cursor-pointer backdrop-blur-sm rounded-small hover:shadow-lg shadow-black"): "z-10 w-auto duration-1000 ease-in-out delay-100 shadow-sm cursor-pointer backdrop-blur-sm rounded-small  hover:shadow-lg shadow-black"
   }`;
 
   return (
