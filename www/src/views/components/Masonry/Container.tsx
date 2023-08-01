@@ -5,7 +5,7 @@ export default function Container(props: MasonryContainerProps & { children: Rea
   let { children, cols, gap } = props;
 
   return (
-    <div className={`grid ${cols ? "grid-cols-" + cols : ""} ${gap ? "gap-" + gap : ""} grid-cols-1`}>
+    <div className={`grid ${cols ? "grid-cols-" + cols : ""} ${gap ? "gap-" + gap : ""} grid-cols-2`}>
       {children}
     </div>
   );

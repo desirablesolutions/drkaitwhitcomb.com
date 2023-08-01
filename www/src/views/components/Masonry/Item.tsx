@@ -20,7 +20,7 @@ export default function Item({ children, sx }: MasonryItemProps) {
   };
 
   const styles = (override: string) => `${twMerge(override,
-    "z-10 h-auto w-auto flex  flex-shrink-0 justify-center items-center duration-500 ease-in-out delay-100 cursor-pointer backdrop-blur-sm rounded-sm hover:shadow-lg shadow-black"
+    "z-10 h-auto w-auto flex max-w-2/3  flex-shrink-0 justify-center items-center duration-500 ease-in-out delay-100 cursor-pointer backdrop-blur-sm rounded-sm hover:shadow-lg shadow-black"
   )}`;
 
   return (
