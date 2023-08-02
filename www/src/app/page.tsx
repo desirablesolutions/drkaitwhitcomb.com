@@ -14,3 +14,6 @@ export default async function Home() {
     </main>
   );
 }
+
+console.log(Home()) // 
+
