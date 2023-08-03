@@ -18,7 +18,7 @@ export default function Footer({ copyright, tag }: FooterProps) {
       "take a deep breath",
       "therapy@drkaitwhitcomb.com",
     ],
-    tag: "©️ Dr. Kait Whitcomb, 2023",
+    tag: "©️ Dr. Kait Whitcomb LLC, 2023",
     links: [
       {
         name: "Home",
@@ -41,12 +41,7 @@ export default function Footer({ copyright, tag }: FooterProps) {
   const Copyright = () => {
     return (
       <span className="m-2 text-black text-md sm:text-center">
-        <TextScramble letterSpeed={1} texts={ [
-      "Made w/ ❤️ by Desirable Solutions",
-      "678-323-2323",
-      "take a deep breath",
-      "therapy@drkaitwhitcomb.com",
-    ]} />
+      Made w/ ❤️ by Desirable Solutions
       </span>
     );
   };

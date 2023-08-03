@@ -25,7 +25,6 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-attachment: fixed;
-  background-image: linear-gradient(var(--color-primary), transparent);
+  background-color: white;
 
 }
