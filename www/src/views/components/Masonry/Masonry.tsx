@@ -25,7 +25,7 @@ export default function Masonry(props: MasonryProps) {
       return (
         <>
           {items?.map((item) => {
-            return Templates[item?.type](item) ?? <></>
+            return Templates[item.type](item) ?? <></>
           })}
         </>
       );
