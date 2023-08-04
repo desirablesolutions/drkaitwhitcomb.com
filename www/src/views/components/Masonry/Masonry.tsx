@@ -16,6 +16,14 @@ import { arrayExists, tuid } from "@utils/index";
 
 export default function Masonry(props: MasonryProps) {
 
+
+  function TitleItem() {
+    return (
+      <>
+      </>
+    )
+  }
+
   const { grids, items, container } = props as MasonryProps;
 
   function renderItems(items: Weak<MasonryItemProps[]>) {
