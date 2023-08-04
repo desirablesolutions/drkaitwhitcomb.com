@@ -17,7 +17,7 @@ const defaultProps = {
 export const Templates = {
   image: (item: any) => (
     <Item>
-      <Image className="object-cover w-full h-full" {...item} />
+      <Image className="object-cover bg-center w-full h-full" {...item} />
     </Item>
   ),
   text: (item: any) => (

@@ -130,8 +130,9 @@ export const pages: any = {
         },
         items: [
           {
-            type: "text",
-            content: "## Contact Me",
+            type: "callout",
+            title: "Contact Me",
+            content: `If you think I might be a good fit, I’d love to hear from you. Please call or email me to schedule your free consultation today.`
           },
           {
             type: "map",
@@ -146,10 +147,18 @@ export const pages: any = {
           {
             items: [
               {
-                type: "text",
-                content: `Individual therapy from a licensed psychologist I work with adult
-                          clients to help them find the healing they’re looking for. 
-                          ## I’m glad you’re here! Learn more`,
+                type: "callout",
+                title: `
+                870 Clark St. ste #1020
+                
+                Oviedo, FL 32765
+                `,
+                content: `
+                Tel  (407) 493-2238
+                
+                Fax (407) 542-1804
+                
+                therapy@drkaitwhitcomb.co`
               },
 
           
@@ -185,21 +194,26 @@ export const pages: any = {
                 content: "Each session is 50 minutes. We schedule a recurring appointment time to ensure that you receive the consistent care you need, at an interval that makes sense for you.                I do not accept insurance."
               },
               {
-                type: "text",
-                content: "## My Approach"
+                type: "callout",
+                title: "My Approach",
+                content: `I specialize in treating adults with PTSD, OCD, anxiety, and depression. While every client is different, individual therapy with me often follows a similar pattern. First, we’ll do a free phone consultation to make sure I’m a good fit for you. Then we’ll do a few sessions together, so I can better understand your concerns, history, and goals. After that, we’ll develop a flexible treatment plan using research-supported treatments. This document will help you understand what to expect from our time together,
+                 so you can see the steps we'll take to help you reach your goals.`
               },
-              {
-                type: "text",
-                content: "## Individual Therapy Services"
-              },
-              {
-                type: "image",
-                src: images.nature,
-              },
+            
            
         
             ],
           },
+
+          {
+            items: [
+            
+              {
+                type: "image",
+                src: images.nature,
+              },
+            ]
+          }
          
         ],
       },
