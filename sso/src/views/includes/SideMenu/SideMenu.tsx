@@ -11,7 +11,7 @@ export default function SideMenu() {
     );
   };
   return (
-    <div className="hidden lg:block w-1/5 navbar-menu relative z-50">
+    <div className="hidden lg:lock w-1/5 navbar-menu relative z-50">
       <nav className="fixed top-0 left-0 bottom-0 w-1/5 max-w-xxs flex flex-col h-full py-8 px-4 bg-gray-700 overflow-auto">
         <div className="mb-6">
           <a className="inline-block mb-12" href="#">
