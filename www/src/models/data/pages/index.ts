@@ -60,7 +60,7 @@ export const pages: any = {
                 type: "data",
                 title: `Dr. Kait Whitcomb, LLC `,
                 subTitle: "therapy@drkaitwhitcomb.com",
-                content: `Phone: (407) 493-2238  Fax: (407) 542-1804`
+                content: `Phone: (407) 493-2238 | Fax: (407) 542-1804`
               },
            
             ],
