@@ -8,8 +8,9 @@ export type LinkProps = {
 export type MasonryItemProps =
   | ({ order?: number; type: MasonryItemTypes } & { type: "image"; src: string })
   | { type: "text"; content: string }
-  | { type: "map" } 
-  | { type: "callout", link? : LinkProps };
+  | { type: "map" }
+  | { type: "data" }
+  | { type: "callout", link?: LinkProps };
 
 export type MasonryGridProps = MasonryProps & {
   container?: Weak<MasonryProps>
