@@ -1,6 +1,5 @@
 import { images } from "@assets/images"
 
-
 export const pages: any = {
     home: {
         layout: {
@@ -20,8 +19,8 @@ export const pages: any = {
                     {
                         items: [
                             {
-                                type: "text",
-                                content: `## Individual therapy from a licensed psychologist.`
+                                type: "image",
+                                src: images.landscape
                             },
 
                             {
@@ -46,6 +45,10 @@ export const pages: any = {
                     {
 
                         items: [
+                            {
+                                type: "text",
+                                content: ` ### I work with adult clients to help them find the healing they’re looking for.`
+                            },
                             {
                                 type: "image",
                                 src: images.profile

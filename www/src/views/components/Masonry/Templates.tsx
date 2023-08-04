@@ -1,11 +1,10 @@
 import Image from "@components/Image";
 import Item from "@components/Masonry/Item";
 import Markdown from "@components/Markdown";
-import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
-
 import GoogleMapReact from "google-map-react";
 
 const AnyReactComponent = ({ text }: any) => <div className="text-4xl z-50">{text}</div>;
+
 const defaultProps = {
   center: {
     lat: 28.66579534317306,
@@ -14,6 +13,7 @@ const defaultProps = {
 
   zoom: 15,
 };
+
 export const Templates = {
   image: (item: any) => (
     <Item>
@@ -25,7 +25,11 @@ export const Templates = {
       <Markdown>{item.content}</Markdown>
     </Item>
   ),
-
+  callout: (item: any) => (
+    <Item sx="hover:bg-opacity-40  duration-500 ease-in-out p-8 bg-black bg-opacity-20">
+      
+    </Item>
+  ),
   map: (item: any) => (
     <div style={{ height: "33vh", width: "100%" }}>
       <GoogleMapReact

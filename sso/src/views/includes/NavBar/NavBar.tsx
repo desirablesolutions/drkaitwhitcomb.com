@@ -1,6 +1,6 @@
 export default function NavBar() {
     return (
-        <nav className=" flex items-center justify-between p-8 bg-gray-700 mb-3">
+        <nav className=" flex items-center justify-between p-8 mb-3">
         <div className="w-full xl:w-auto px-2 xl:mr-12">
           <div className="flex items-center justify-between">
             <a className="inline-flex items-center h-8" href="#">

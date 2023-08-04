@@ -5,7 +5,7 @@ export default function Home() {
   
     <div className="mx-auto lg:ml-80">
     <section>
-      <nav className="relative flex items-center justify-between p-8 bg-gray-700 mb-3">
+      <nav className="relative flex items-center justify-between p-8  mb-3">
         <div className="w-full xl:w-auto px-2">
           <div className="flex items-center justify-between">
             <a className="inline-flex items-center h-8" href="#">
