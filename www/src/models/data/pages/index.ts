@@ -81,62 +81,42 @@ export const pages: any = {
           gap: 2,
           cols: 1,
         },
-        items: [
-          {
-            text: "About Dr. Kait Whitcomb",
-          },
-        ],
+     
         grids: [
+        {
+          items: [
+            {
+              type: "callout",
+              title: "Find the healing you are looking for",
+              content: `
+              I love helping clients make real, meaningful change that can help them achieve their goals. Using evidence-based treatments, I help clients learn to manage down days, ease anxious minds, heal past trauma, and establish better behavioral patterns.
+              In every session, I try to create a welcoming environment so you can feel heard, understood, and validated. My clients have described me as warm and easy to talk to – and as someone who treats them like an individual, not a number.
+              If you think I might be a good fit, I’d love to hear from you. Please call or email me to schedule your free consultation today..​`,
+            },
+            {
+              type: "callout",
+              title: "My experience and training",
+              content: `## About Kait Whitcomb.​`,
+            },
+          ]
+        },
+          
           {
             items: [
+              {
+                type: "text",
+                content: `## About Kait Whitcomb.​`,
+              },
               {
                 type: "image",
                 src: images.overlooking,
               },
-              {
-                type: "text",
-                content: `## My experience and training.​`,
-              },
-              {
-                type: "text",
-                content: `### I'm a licensed psychologist practicing in Oviedo, Florida. I earned my PhD in Clinical Psychology in 2017 from Brigham Young University, then completed a postdoctoral residency at a university counseling center. I opened my own practice in 2019. I specialize in treating adults with OCD, PTSD, anxiety, and depression. It is important to me that clients of all identities and from all cultural backgrounds feel safe, accepted, and celebrated in my practice`,
-              },
-              {
-                type: "text",
-                content: `## Find the healing you are looking for`,
-              },
+         
+         
+        
             ],
           },
-          {
-            items: [
-              {
-                type: "text",
-                content: `### Individual therapy from a licensed psychologist.`,
-              },
-
-              {
-                type: "text",
-                content: `### I work with adult clients to help them find the healing they’re looking for.`,
-              },
-
-              {
-                type: "text",
-                content: `## Dr. Kait Whitcomb, LLC `,
-              },
-              {
-                type: "text",
-                content: `### therapy@drkaitwhitcomb.com `,
-              },
-              {
-                type: "text",
-                content: `### Phone: (407) 493-2238 `,
-              },
-              {
-                type: "text",
-                content: `### Fax: (407) 542-1804`,
-              },
-            ],
-          },
+       
         ],
       },
     },
@@ -162,16 +142,7 @@ export const pages: any = {
           },
         ],
         grids: [
-          {
-            items: [
-              {
-                type: "text",
-                content: `                              
-                                        # 870 Clark St. ste #1020
-`,
-              },
-            ],
-          },
+       
           {
             items: [
               {
@@ -181,18 +152,7 @@ export const pages: any = {
                           ## I’m glad you’re here! Learn more`,
               },
 
-              {
-                type: "text",
-                content: `## Dr. Kait Whitcomb, LLC`,
-              },
-              {
-                type: "text",
-                content: `### therapy@drkaitwhitcomb.com`,
-              },
-              {
-                type: "text",
-                content: `### Phone: (407) 493-2238 ### Fax: (407) 542-180`,
-              },
+          
             ],
           },
         ],
@@ -211,42 +171,36 @@ export const pages: any = {
           },
         ],
         grids: [
+        
           {
             items: [
+              {
+                type: "text",
+                content: "## Individual Therapy Services"
+              },
+              {
+                type: "callout",
+                title: "Fees",
+                subTitle: "$160/Session​",
+                content: "Each session is 50 minutes. We schedule a recurring appointment time to ensure that you receive the consistent care you need, at an interval that makes sense for you.                I do not accept insurance."
+              },
+              {
+                type: "text",
+                content: "## My Approach"
+              },
+              {
+                type: "text",
+                content: "## Individual Therapy Services"
+              },
               {
                 type: "image",
                 src: images.nature,
               },
-              {
-                type: "text",
-                content: `# Fees
-                                $160/Session​ 
-                               `,
-              },
-              {
-                type: "text",
-                content: `## I do not accept insurance.`,
-              },
+           
+        
             ],
           },
-          {
-            items: [
-              {
-                type: "text",
-                content: `Individual therapy from a licensed psychologist I work with adult
-                          clients to help them find the healing they’re looking for. I’m glad you’re here! Learn more`,
-              },
-
-              {
-                type: "text",
-                content: `## Dr. Kait Whitcomb, LLC
-                                ## therapy@drkaitwhitcomb.com
-                                
-                                Phone: (407) 493-2238
-                                Fax: (407) 542-1804`,
-              },
-            ],
-          },
+         
         ],
       },
     },

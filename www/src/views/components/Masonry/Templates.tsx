@@ -29,7 +29,7 @@ export const Templates = {
     <Item sx="hover:bg-opacity-40 flex flex-col justify-start duration-500 ease-in-out p-8 bg-black bg-opacity-20">
       <h1 className="text-4xl text-left">{item.title}</h1>
       <blockquote className="text-left text-2xl text-black">{item.content}</blockquote>
-      <a className="text-left border-1 p-4" href={item.link.url}>{item.link.label}</a>
+      <a className="text-left border-1 p-4" href={item?.link?.url ?? ""}>{item?.link?.label ?? ""}</a>
     </Item>
   ),
   data: (item: any) => (
