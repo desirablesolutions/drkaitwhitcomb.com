@@ -25,19 +25,7 @@ export default function Masonry(props: MasonryProps) {
       return (
         <>
           {items?.map((item) => {
-            switch (item.type) {
-              case "image": {
-                return Templates.image(item);
-              }
-
-              case "text": {
-                return Templates.text(item);
-              }
-
-              case "map": {
-                return Templates.map(item);
-              }
-            }
+            return Templates[item.type](item)
           })}
         </>
       );

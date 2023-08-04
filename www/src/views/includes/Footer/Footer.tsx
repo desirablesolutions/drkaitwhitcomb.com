@@ -37,7 +37,15 @@ export default function Footer({ copyright, tag }: FooterProps) {
   const Copyright = () => {
     return (
       <span className="m-2 text-black text-md sm:text-center">
-      Made w/ ❤️ by Desirable Solutions
+      (407) 493-2238  
+      </span>
+    );
+  };
+
+  const Contact = () => {
+    return (
+      <span className="m-2 text-black text-md sm:text-center">
+     therapy@drkaitwhitcomb.com
       </span>
     );
   };
@@ -72,7 +80,7 @@ export default function Footer({ copyright, tag }: FooterProps) {
     <footer className="w-full p-6 border-t border-black backdrop-blur-md relative-20 md:flex md:items-center md:justify-between md:p-6 dark:border-gray-600">
       <Tag />
       <Copyright />
-      <Copyright />
+      <Contact />
       <Links />
     </footer>
   );
