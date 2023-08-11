@@ -31,10 +31,10 @@ export const Templates = {
   ),
   callout: (item: any) => (
     <Item item={item}>
-      <h1 className="text-6xl text-left p-4">{item.title}</h1>
+      <h1 className="text-6xl text-left p-6">{item.title}</h1>
       <h2 className="text-4xl opacity-90 text-left p-4">{item.subTitle}</h2>
       <blockquote className="text-left p-4 m-4 text-4xl text-black">{item.content}</blockquote>
-      <a className="text-left border-1 p-4" href={item?.link?.url ?? ""}>{item?.link?.label ?? ""}</a>
+      <a className="text-left text-gray-600 text-2xl border-1 p-4" href={item?.link?.url ?? ""}>{item?.link?.label ?? ""}</a>
     </Item>
   ),
   data: (item: any) => (

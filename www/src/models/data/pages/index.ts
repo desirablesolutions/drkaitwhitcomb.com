@@ -1,10 +1,5 @@
+import type { PageStoreType } from "@/models/typings";
 import { images } from "@assets/images";
-import { MasonryGridProps, MasonryProps } from "@/models/typings";
-
-export type PageStoreType = {
-  metaData: any;
-  data: any;
-};
 
 export const pages: PageStoreType = {
   metaData: {
@@ -17,7 +12,6 @@ export const pages: PageStoreType = {
       },
     },
   },
-
   data: {
     home: {
       metaData: {
@@ -72,8 +66,15 @@ export const pages: PageStoreType = {
 
               items: [
                 {
-                  type: "header",
-                  content: `Individual Therapy from a Licensed Psychologist`,
+                  type: "callout",
+                  title: `Individual Therapy from a Licensed Psychologist`,
+                  link: {
+                    label: "Learn More",
+                    url: "/about"
+                  },
+                  content: `I work with adult clients to help them find the healing they’re looking for. I’m glad you’re here!
+
+                  `
                 },
                 {
                   type: "image",
@@ -82,9 +83,16 @@ export const pages: PageStoreType = {
                 },
 
                 {
-                  type: "header",
+                  type: "callout",
+title: "Dr. Kait Whitcomb, LLC",
+                  subTitle: "therapy@drkaitwhitcomb.com",
+                  content: `
+                  
 
-                  content: "call Me",
+
+
+Phone: (407) 493-2238   |   Fax: (407) 542-1804
+                  `
                 },
               ],
             },
@@ -180,7 +188,7 @@ If you think I might be a good fit, I’d love to hear from you. Please call or 
               items: [
                 {
                   type: "image",
-                  src:images.map
+                  src: images.map,
                 },
               ],
             },
@@ -188,7 +196,6 @@ If you think I might be a good fit, I’d love to hear from you. Please call or 
               span: 3,
               columns: 3,
               items: [
-          
                 {
                   type: "callout",
                   span: 2,
@@ -201,7 +208,7 @@ If you think I might be a good fit, I’d love to hear from you. Please call or 
                   type: "callout",
                   span: 1,
                   title: "Fees",
-                  subTitle: "$150/Session​", 
+                  subTitle: "$150/Session​",
                   content: `
                   
 870 Clark St. ste #1020
@@ -214,11 +221,10 @@ Tel  (407) 493-2238
 
 Fax (407) 542-1804
 
-therapy@drkaitwhitcomb.com`
+therapy@drkaitwhitcomb.com`,
                 },
               ],
             },
-          
           ],
         },
       },
@@ -247,7 +253,6 @@ therapy@drkaitwhitcomb.com`
               span: 3,
               columns: 3,
               items: [
-          
                 {
                   type: "callout",
                   span: 2,
@@ -265,14 +270,14 @@ therapy@drkaitwhitcomb.com`
                   type: "callout",
                   span: 1,
                   title: "Fees",
-                  subTitle: "$150/Session​", 
+                  subTitle: "$150/Session​",
                   content: `
                   
         
                   Each session is 50 minutes. We schedule a recurring appointment time to ensure 
                   that you receive the consistent care you need, at an interval that makes sense for you.
 
-                  I do not accept insurance.`
+                  I do not accept insurance.`,
                 },
               ],
             },
@@ -283,7 +288,7 @@ therapy@drkaitwhitcomb.com`
               items: [
                 {
                   type: "image",
-                  src:images.nature
+                  src: images.nature,
                 },
               ],
             },

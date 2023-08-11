@@ -83,3 +83,10 @@ export type TailwindColumnSpanType =
     links?: any;
     favicon?: FaviconProps
   };
+
+
+  export type PageStoreType = {
+    metaData: any;
+    data: any;
+  };
+  
