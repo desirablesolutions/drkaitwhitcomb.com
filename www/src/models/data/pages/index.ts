@@ -207,21 +207,19 @@ If you think I might be a good fit, I’d love to hear from you. Please call or 
                 {
                   type: "callout",
                   span: 1,
-                  title: "Fees",
-                  subTitle: "$150/Session​",
+                  subTitl: "therapy@drkaitwhitcomb.com",
+                  title: `870 Clark St. ste #1020
+
+                  Oviedo, FL 32765
+                  `,
                   content: `
-                  
-870 Clark St. ste #1020
+                
 
-Oviedo, FL 32765
-
- 
-
-Tel  (407) 493-2238
+Tel  (407) 493-2238 | 
 
 Fax (407) 542-1804
 
-therapy@drkaitwhitcomb.com`,
+`,
                 },
               ],
             },
