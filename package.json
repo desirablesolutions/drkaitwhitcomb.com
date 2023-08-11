@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "readme:g": "npx @appnest/readme generate --configs=docs.config.json"
+    "readme:g": "npx @appnest/readme generate --config=docs.config.json && copy README.md sso"
   
   }
  

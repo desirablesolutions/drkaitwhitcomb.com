@@ -1,5 +1,5 @@
 
-
+import {default as Agency} from "./Tag"
 export type FooterProps = {
   copyright?: string[];
   tag?: string;
@@ -82,6 +82,7 @@ export default function Footer({ copyright, tag }: FooterProps) {
       <Copyright />
       <Contact />
       <Links />
+      <Agency/>
     </footer>
   );
 }

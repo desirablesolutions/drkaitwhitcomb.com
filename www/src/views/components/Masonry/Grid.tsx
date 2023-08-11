@@ -2,6 +2,10 @@ import type { MasonryGridProps } from "@typings/index";
 import {  rowsSx, gapSx, columnsSx, columnSpanSx } from "@styles/index";
 import { classSet } from "@/controllers/utils";
 
+
+export function defaultSx() {
+  return `grid`
+}
 export default function Grid({
   grid,
   children,
@@ -16,6 +20,7 @@ export default function Grid({
         gapSx(gap),
         columnSpanSx(span),
         columnsSx(columns),
+        defaultSx()
       ])}
     >
       {children}

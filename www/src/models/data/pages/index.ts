@@ -1,13 +1,25 @@
 import { images } from "@assets/images";
 import { MasonryGridProps, MasonryProps } from "@/models/typings";
+
 export type PageStoreType = {
   metaData: any;
   data: any;
 };
+
+
 export const pages: PageStoreType = {
   metaData: {
     layout: {
-      navBar: {},
+      navBar: {
+        links: [
+
+        ]
+      },
+      footer: {
+        links: [
+          
+        ]
+      }
     },
   },
 
@@ -16,19 +28,20 @@ export const pages: PageStoreType = {
       metaData: {
         pageTitle: "Home",
         description: "",
-        layout: {},
       },
       data: {
         masonry: {
           container: {
-            gap: 1,
-            columns: 1,
+            gap: 2,
+            rows: 1,
+            columns: 2,
           },
 
           grids: [
             {
-              columns: 2,
+              columns: 1,
               gap: 2,
+              span: 1,
 
               items: [
                 {
@@ -38,7 +51,7 @@ export const pages: PageStoreType = {
                 },
                 {
                   type: "callout",
-                  span: 1,
+               
 
                   content: `Office and Telehealth Visits Available`,
                 },
@@ -51,49 +64,31 @@ export const pages: PageStoreType = {
               ],
             },
             {
-              columns: 2,
+              columns: 1,
               gap: 2,
-              items: [
-                {
-                  type: "image",
-                  src: images.profile,
-                },
-                {
-                  type: "image",
-                  src: images.office,
-                },
-              ],
-            },
-            {
-              columns: 2,
-              gap: 2,
+              span: 1,
 
               items: [
                 {
-                  type: "callout",
-                  title: `Individual therapy from a licensed psychologist.`,
-                  content: `I work with adult clients to help them find the healing they’re looking for.`,
-                  link: {
-                    url: "#",
-                    label: "Learn More",
-                  },
-                },
-                {
                   type: "image",
-                  src: images.profile,
-                },
-                {
-                  type: "image",
-                  src: images.office,
+
+                  src: images.landscape,
                 },
                 {
                   type: "callout",
-                  title: `Dr. Kait Whitcomb, LLC `,
-                  subTitle: "therapy@drkaitwhitcomb.com",
-                  content: `Phone: (407) 493-2238 | Fax: (407) 542-1804`,
+               
+
+                  content: `Office and Telehealth Visits Available`,
+                },
+
+                {
+                  type: "image",
+
+                  src: images.flowers,
                 },
               ],
             },
+           
           ],
         },
       },
