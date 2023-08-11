@@ -61,7 +61,7 @@ export function defaultProps(): SideMenuProps {
   }
 }
 
-export default function SideMenu({ sideMenu }: { sideMenu: SideMenuProps }) {
+export default function SideMenu({ sideMenu }: { sideMenu?: SideMenuProps }) {
 
   return (
     <Container>

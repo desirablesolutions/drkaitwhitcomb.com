@@ -2,7 +2,9 @@ import SideMenu from "@includes/SideMenu";
 import NavBar from "@includes/NavBar"
 
 const pageData = {
-  sideMenu: {}
+  sideMenu: {
+  
+  }
 }
 
 export default async function SpacePage() {

@@ -10,14 +10,14 @@ const variants = {
       delayChildren: 1.3,
     },
   },
-  exit: { opacity: 0 },
+
 };
 
 const animationsSx = {
   variants,
   initial: "hidden",
   animate: "enter",
-  exit: "exit",
+
   transition: {
     type: "easeInOut",
     duration: 1.8,

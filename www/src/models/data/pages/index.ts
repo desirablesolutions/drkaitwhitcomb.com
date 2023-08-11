@@ -166,7 +166,7 @@ If you think I might be a good fit, I’d love to hear from you. Please call or 
     },
     contact: {
       data: {
-        masonry: {
+        masonry: { 
           container: {
             gap: 1,
             rows: 1,
