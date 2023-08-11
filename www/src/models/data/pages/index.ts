@@ -6,20 +6,15 @@ export type PageStoreType = {
   data: any;
 };
 
-
 export const pages: PageStoreType = {
   metaData: {
     layout: {
       navBar: {
-        links: [
-
-        ]
+        links: [],
       },
       footer: {
-        links: [
-          
-        ]
-      }
+        links: [],
+      },
     },
   },
 
@@ -34,32 +29,31 @@ export const pages: PageStoreType = {
           container: {
             gap: 2,
             rows: 1,
-            columns: 2,
+            columns: 3,
           },
 
           grids: [
             {
               columns: 1,
               gap: 2,
-              span: 1,
+              span: 2,
 
               items: [
                 {
                   type: "image",
-
+                  span: 2,
                   src: images.landscape,
                 },
                 {
                   type: "callout",
-               
-
-                  content: `Office and Telehealth Visits Available`,
+                  title: `Office and Telehealth Visits Available`,
                 },
 
                 {
                   type: "image",
+                  span: 1,
 
-                  src: images.flowers,
+                  src: images.profile,
                 },
               ],
             },
@@ -70,25 +64,27 @@ export const pages: PageStoreType = {
 
               items: [
                 {
+                  type: "callout",
+                  title: `Individual Therapy from a License Psychologist`,
+                },
+                {
+                  type: "image",
+
+                  src: images.profile,
+                },
+                {
+                  type: "callout",
+
+                  title: `Office and Telehealth Visits Available`,
+                },
+
+                {
                   type: "image",
 
                   src: images.landscape,
                 },
-                {
-                  type: "callout",
-               
-
-                  content: `Office and Telehealth Visits Available`,
-                },
-
-                {
-                  type: "image",
-
-                  src: images.flowers,
-                },
               ],
             },
-           
           ],
         },
       },
