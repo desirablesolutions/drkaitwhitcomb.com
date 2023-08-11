@@ -1,8 +1,24 @@
 import type { MasonryGridProps } from "@typings/index";
-export default function Grid(
-  props: MasonryGridProps & { children: React.ReactNode }
-) {
-  let { children } = props;
+import {  rowsSx, gapSx, columnsSx, columnSpanSx } from "@styles/index";
+import { classSet } from "@/controllers/utils";
 
-  return <div className="grid gap-2">{children}</div>;
+export default function Grid({
+  grid,
+  children,
+}: { grid: MasonryGridProps } & { children: React.ReactNode }) {
+  
+  const { columns, rows, gap, span } = grid;
+
+  return (
+    <div
+      className={classSet([
+        rowsSx(rows),
+        gapSx(gap),
+        columnSpanSx(span),
+        columnsSx(columns),
+      ])}
+    >
+      {children}
+    </div>
+  );
 }

@@ -1,28 +1,86 @@
 export type Weak<Type> = Type | undefined | null;
 
-export type MasonryItemTypes = "image" | "text" | "map";
-export type LinkProps = {
-  url?: string,
-  label?: string
-}
-export type MasonryItemProps =
-  | ({ order?: number; type: MasonryItemTypes } & { type: "image"; src: string })
-  | { type: "text"; content: string }
+export type MasonryItemTypes =
   | { type: "map" }
   | { type: "data" }
-  | { type: "callout", link?: LinkProps };
+  | { type: "text" }
+  | { type: "image" }
+  | { type: "callout"; link: LinkProps, title: string };
 
-export type MasonryGridProps = MasonryProps & {
-  container?: Weak<MasonryProps>
+export type LinkProps = {
+  url: string;
+  label: string;
+};
+
+export type MasonryItemProps = MasonryItemTypes & {
+  span: number,
 }
 
+export type MasonryGridProps = MasonryProps & {
+  span: number;
+  gap: number;
+  columns: number;
+  rows: number;
+  grids: MasonryGridProps[];
+  items: MasonryItemProps[];
+};
+
 export type MasonryContainerProps = {
-  cols?: number;
-  gap?: number;
+  columns: number;
+  rows: number;
+  gap: number;
 };
 
 export type MasonryProps = {
-  grids?: MasonryGridProps[];
-  items?: MasonryItemProps[];
-  container?: MasonryContainerProps;
+  grids: MasonryGridProps[];
+  items: MasonryItemProps[];
+  container: MasonryContainerProps;
 };
+
+
+
+export type TailwindGridColumnType =
+  | "grid-cols-1"
+  | "grid-cols-2"
+  | "grid-cols-3"
+  | "grid-cols-4"
+  | "grid-cols-4";
+
+
+  export type TailwindGridRowsType =
+  | "grid-rows-1"
+  | "grid-rows-2"
+  | "grid-rows-3"
+  | "grid-rows-4"
+  | "grid-rows-4";
+
+export type TailwindGridGapType = "gap-2" | "gap-4" | "gap-6" | "gap-8";
+
+export type TailwindColumnSpanType =
+  | "col-span-1"
+  | "col-span-2"
+  | "col-span-3"
+  | "col-span-4"
+  | "col-span-4";
+
+
+  export type ImageProps = {
+    src: string,
+    alt: string,
+    height: string,
+    className: string, 
+    width: string,
+    loading: string
+  }
+  
+  export type FaviconProps = {
+    image: ImageProps
+  }
+
+  export type TailwindClassList = string | string[];
+
+
+  export type NavBarProps = {
+    links?: any;
+    favicon?: FaviconProps
+  };

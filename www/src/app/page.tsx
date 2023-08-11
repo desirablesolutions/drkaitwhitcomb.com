@@ -1,6 +1,7 @@
 import Masonry from "@components/Masonry";
 
 import { usePage } from "@hooks/usePage";
+import { definePage } from "blakprint";
 
 export default async function Home() {
   
@@ -10,7 +11,7 @@ export default async function Home() {
 
   return (
     <main className="flex flex-col items-center justify-between min-h-screen p-24">
-      <Masonry {...masonry} />
+      <Masonry masonry={masonry} />
     </main>
   );
 }

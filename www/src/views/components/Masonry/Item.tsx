@@ -1,30 +1,24 @@
-import { useState } from "react";
-import { twMerge } from "tailwind-merge";
+import { classSet } from "@/controllers/utils";
+import { MasonryItemProps } from "@/models/typings";
+import { columnSpanSx } from "@styles/index";
 
-export type MasonryItemProps = {
-  children: React.ReactNode;
-  key?: number | string;
-  sx?: string;
-  order?: number;
-  type?: "image" | "text";
-};
+export function defaultSx() {
+  return `z-10 h-auto w-auto flex  flex-shrink-0 justify-center items-center  cursor-pointer hover:bg-opacity-40 flex flex-col justify-start duration-500 ease-in-out p-4 bg-opacity-20 rounded-sm hover:shadow-lg shadow-black`;
+}
 
+export default function Item({
+  item,
+  children,
+}: { item: MasonryItemProps } & { children: any }) {
+  
 
-export default function Item({ children, sx }: MasonryItemProps) {
-  const [modal, setModal] = useState({ className: "", open: true });
-  const handleClick = () => {
-    setModal({
-      className: "",
-      open: true,
-    });
-  };
-
-  const styles = (override: string) => `${twMerge(override,
-    "z-10 h-auto w-auto flex max-w-2/3  flex-shrink-0 justify-center items-center duration-500 ease-in-out delay-100 cursor-pointer backdrop-blur-sm rounded-sm hover:shadow-lg shadow-black"
-  )}`;
+  const { span } = item
 
   return (
-    <div onClick={handleClick} className={styles(sx ?? "")}>
+    <div
+     
+      className={classSet([defaultSx(), "bg-gray-700",columnSpanSx(span)])}
+    >
       {children}
     </div>
   );

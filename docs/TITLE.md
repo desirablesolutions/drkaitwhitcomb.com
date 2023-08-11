@@ -1,1 +1,1 @@
-<h1>Dr. Kait Whitcomb Psychology</h1>
+<h1>Dr. Kait Whitcomb, LLC</h1>

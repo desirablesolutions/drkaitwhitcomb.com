@@ -22,6 +22,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@includes/*": ["./src/views/includes/*"],
+      "@styles/*": ["./src/views/styles/*"],
+
       "@components/*": ["./src/views/components/*"],
       "@utils/*": ["./src/controllers/utils/*"],
       "@assets/*": ["./src/models/data/assets/*"],

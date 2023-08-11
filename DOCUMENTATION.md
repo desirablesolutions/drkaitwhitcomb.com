@@ -1,1 +1,5 @@
 (load:docs/TITLE.md)
+(load:docs/LOGO.md)
+(load:docs/DEPENDENCIES.md)
+(load:docs/COPYRIGHT.md)
+(load:docs/LICENSE.md)

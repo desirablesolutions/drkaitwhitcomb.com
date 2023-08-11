@@ -1,5 +1,10 @@
 {
-  "dependencies": {
-    "blakprint": "^11.32323.30"
+  "name": "drkaitwhitcomb-psychology",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "readme:g": "npx @appnest/readme generate --configs=docs.config.json"
+  
   }
+ 
 }

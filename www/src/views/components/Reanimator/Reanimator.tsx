@@ -20,8 +20,8 @@ const animationsSx = {
   exit: "exit",
   transition: {
     type: "easeInOut",
-    duration: 1.1,
-    staggerChildren: 0.67,
+    duration: 1.8,
+    staggerChildren: 1.17,
     staggerDirection: 1,
   },
 };

@@ -3,13 +3,10 @@ import { pages } from "@pages/index"
 export function PageService() {
 
     const methods = {
-        getPage: async (id: string) => {
-            const page = pages[id]
+        getPage: async (id: string): Promise<any> => {
+            const page = pages.data[id]
             return page
         },
-        getPages: async () => {
-            return pages
-        }
     }
     return { ...methods }
 }

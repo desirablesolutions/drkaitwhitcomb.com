@@ -1,11 +1,26 @@
 import type { MasonryContainerProps } from "@typings/index";
+import { classSet } from "@utils/index";
+import { rowsSx, gapSx, columnsSx } from "@styles/index";
 
-export default function Container(props: MasonryContainerProps & { children: React.ReactNode }) {
+export function defaultSx() {
+  return `grid`
+}
 
-  let { children, cols, gap } = props;
+export default function Container(
+  { container, children }: {container: MasonryContainerProps} & { children: any }
+) {
+  
+  const { columns, rows, gap } = container;
 
   return (
-    <div className={`grid  ${gap ? "gap-" + gap : ""} grid-cols-1 lg:grid-cols-2 md:grid-cols-2 xl:grid-cols-2`}>
+    <div
+      className={classSet([
+        defaultSx(),
+        rowsSx(rows),
+        gapSx(gap),
+        columnsSx(columns),
+      ])}
+    >
       {children}
     </div>
   );

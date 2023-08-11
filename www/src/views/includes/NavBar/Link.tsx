@@ -1,6 +1,6 @@
-export default function NavBarLink(props: any) {
+export default function NavBarLink({ link }: { link: any}) {
 
-    let { title, url } = props
+    let { title, url } = link
     
     return (
         
