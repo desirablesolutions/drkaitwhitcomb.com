@@ -5,7 +5,6 @@ export default function Favicon() {
           <a href="/">
             <img
               className="object-contain h-36 mt-2 pb-2"
-              src={!favicon?.image?.src ? defaultProps().favicon.image.src : favicon.image.src}
               alt="logo"
             />
           </a>
