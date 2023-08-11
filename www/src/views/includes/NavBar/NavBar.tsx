@@ -1,7 +1,7 @@
 import { tuid } from "@utils/index";
 import type { NavBarProps } from "@/models/typings";
 import { default as Link } from "./Link";
-
+import Container from "./Container"
 export function defaultProps() {
   return {
     favicon: {
@@ -34,8 +34,9 @@ export default function NavBar(props: NavBarProps) {
 
   const  { links, favicon } = props;
   return (
-    <header className="sticky top-0 left-0 z-40 flex flex-col items-center justify-center w-full h-48 backdrop-blur-lg">
-      <main className="flex justify-center w-full border-b border-black">
+<Container>
+
+<main className="flex justify-center w-full border-b border-black">
         <div>
           <a href="/">
             <img
@@ -46,11 +47,11 @@ export default function NavBar(props: NavBarProps) {
           </a>
         </div>
       </main>
-      <div className="flex mb-2 justify-center h-full overflow-hidden w-full gap-8 mt-2 overflow-x-hidden border-black border-opacity-100 no-scrollbar border-seperate border-1">
+      <div className="flex mb-2 justify-center h-full overflow-hidden w-full sm:w-1/2 sm:gap-4 gap-8 mt-2 overflow-x-hidden border-black border-opacity-100 no-scrollbar border-seperate border-1">
         {defaultProps().links.map((link) => (
           <Link key={tuid()} link={link} />
         ))}
       </div>
-    </header>
+</Container>
   );
 }
