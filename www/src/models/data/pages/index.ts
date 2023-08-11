@@ -46,8 +46,8 @@ export const pages: PageStoreType = {
                 },
 
                 {
-                  type: "callout",
-                  title: "Office and Telehealth Visits Available",
+                  type: "header",
+                  content: "Office and Telehealth Visits Available",
                   span: 2,
                 },
 
@@ -72,8 +72,8 @@ export const pages: PageStoreType = {
 
               items: [
                 {
-                  type: "callout",
-                  title: `Individual Therapy from a Licensed Psychologist`,
+                  type: "header",
+                  content: `Individual Therapy from a Licensed Psychologist`,
                 },
                 {
                   type: "image",
@@ -82,9 +82,9 @@ export const pages: PageStoreType = {
                 },
 
                 {
-                  type: "callout",
+                  type: "header",
 
-                  title: "call Me",
+                  content: "call Me",
                 },
               ],
             },
