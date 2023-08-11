@@ -25,7 +25,7 @@ export const Templates = {
     </Item>
   ),
   header: (item: any) => (
-    <Item sx="bg-black" item={item} >
+    <Item sx="" item={item} >
       <h1 className="text-6xl text-left p-4">{item.content}</h1>
     </Item>
   ),
