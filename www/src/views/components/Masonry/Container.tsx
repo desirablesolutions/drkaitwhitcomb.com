@@ -3,7 +3,7 @@ import { classSet } from "@utils/index";
 import { rowsSx, gapSx, columnsSx } from "@styles/index";
 
 export function defaultSx() {
-  return `grid`
+  return `grid scale-75`
 }
 
 export default function Container(

@@ -8,7 +8,7 @@ import { Thasadith } from "next/font/google";
 
 export async function generateMetadata(): Promise<Metadata> {
   return  {
-    title: "Dr. Kait Whitcomb | Licensed Psychologist",
+    title: "Dr. Kait Whitcomb, LLC | Licensed Psychologist",
     icons: {
       icon: "/icon-192x192.png",
     },

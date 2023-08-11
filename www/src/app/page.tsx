@@ -10,7 +10,7 @@ export default async function Home() {
   const { masonry } = data;
 
   return (
-    <main className="flex flex-col items-center justify-between min-h-screen p-24">
+    <main className="flex flex-col items-center -mt-24 justify-between min-h-screen p-2">
       <Masonry masonry={masonry} />
     </main>
   );

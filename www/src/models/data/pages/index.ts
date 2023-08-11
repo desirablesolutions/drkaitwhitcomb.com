@@ -6,15 +6,20 @@ export type PageStoreType = {
   data: any;
 };
 
+
 export const pages: PageStoreType = {
   metaData: {
     layout: {
       navBar: {
-        links: [],
+        links: [
+
+        ]
       },
       footer: {
-        links: [],
-      },
+        links: [
+
+        ]
+      }
     },
   },
 
@@ -27,33 +32,43 @@ export const pages: PageStoreType = {
       data: {
         masonry: {
           container: {
-            gap: 2,
+            gap: 1,
             rows: 1,
             columns: 3,
           },
 
           grids: [
             {
-              columns: 1,
-              gap: 2,
+              columns: 2,
+              gap: 1,
               span: 2,
 
               items: [
+            
                 {
                   type: "image",
                   span: 2,
                   src: images.landscape,
                 },
+
                 {
                   type: "callout",
-                  title: `Office and Telehealth Visits Available`,
+                  title: "Office and Telehealth Visits Available",
+                  span: 2
                 },
+            
 
                 {
                   type: "image",
                   span: 1,
 
-                  src: images.profile,
+                  src: images.office
+                },
+                {
+                  type: "image",
+                  span: 1,
+
+                  src: images.flowers
                 },
               ],
             },
@@ -63,28 +78,25 @@ export const pages: PageStoreType = {
               span: 1,
 
               items: [
-                {
+                       {
                   type: "callout",
-                  title: `Individual Therapy from a License Psychologist`,
+                  title: `Individual Therapy from a Licensed Psychologist`,
                 },
                 {
                   type: "image",
 
                   src: images.profile,
                 },
+       
+
                 {
                   type: "callout",
 
-                  title: `Office and Telehealth Visits Available`,
-                },
-
-                {
-                  type: "image",
-
-                  src: images.landscape,
+                  title: "call Me"
                 },
               ],
             },
+           
           ],
         },
       },
