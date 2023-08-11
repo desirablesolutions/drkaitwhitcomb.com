@@ -1,5 +1,7 @@
 
 export const images = {
+  map: "/map.jpg",
+
   nature: "https://static.wixstatic.com/media/148286_5154b40f0a32424394c963e8a6c73271~mv2.jpg/v1/crop/x_0,y_2062,w_7360,h_2547/fill/w_1211,h_419,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/148286_5154b40f0a32424394c963e8a6c73271~mv2.jpg",
   overlooking:
     "https://static.wixstatic.com/media/148286_e7602f25ebe7452b90aaca2b0248d6c2~mv2.jpg/v1/fill/w_819,h_543,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Bookshelf_JPG.jpg",

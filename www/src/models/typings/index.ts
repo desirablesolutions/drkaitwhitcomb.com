@@ -3,8 +3,9 @@ export type Weak<Type> = Type | undefined | null;
 export type MasonryItemTypes =
   | { type: "map" }
   | { type: "data" }
-  | { type: "text" }
+  | { type: "text" , content: string }
   | { type: "image" }
+  | { type: "header", content: string }
   | { type: "callout"; link: LinkProps, title: string };
 
 export type LinkProps = {

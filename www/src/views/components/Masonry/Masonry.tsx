@@ -44,6 +44,9 @@ export function renderItems(items: Weak<MasonryItemProps[]>) {
             case "data": {
               return Templates.data(item);
             }
+            case "header": {
+              return Templates.header(item);
+            }
 
             case "callout": {
               return Templates.callout(item);

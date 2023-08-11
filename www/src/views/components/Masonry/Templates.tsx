@@ -24,10 +24,16 @@ export const Templates = {
       <h2>{item.content}</h2>
     </Item>
   ),
+  header: (item: any) => (
+    <Item sx="bg-black" item={item} >
+      <h1 className="text-6xl text-left p-4">{item.content}</h1>
+    </Item>
+  ),
   callout: (item: any) => (
     <Item item={item}>
-      <h1 className="text-4xl text-left">{item.title}</h1>
-      <blockquote className="text-left text-2xl text-black">{item.content}</blockquote>
+      <h1 className="text-6xl text-left p-4">{item.title}</h1>
+      <h2 className="text-4xl opacity-90 text-left p-4">{item.subTitle}</h2>
+      <blockquote className="text-left p-4 m-4 text-4xl text-black">{item.content}</blockquote>
       <a className="text-left border-1 p-4" href={item?.link?.url ?? ""}>{item?.link?.label ?? ""}</a>
     </Item>
   ),

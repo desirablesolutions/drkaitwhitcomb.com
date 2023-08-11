@@ -9,7 +9,7 @@ export default async function SpacePage() {
 
     return(
     <>
-    <SideMenu/>
+    <SideMenu sideMenu={pageData.sideMenu}/>
     <div className="mx-auto lg:ml-80">
        <NavBar/>
         <section className="py-3">

@@ -10,8 +10,8 @@ export default async function Services() {
   const { masonry } = data;
 
   return (
-    <main className="flex flex-col items-center justify-between min-h-screen p-24">
-      <Masonry {...masonry} />
+    <main className="flex flex-col items-center justify-between min-h-screen p-0 m-0">
+      <Masonry masonry={masonry} />
     </main>
   );
 }
