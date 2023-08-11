@@ -207,7 +207,7 @@ If you think I might be a good fit, I’d love to hear from you. Please call or 
                 {
                   type: "callout",
                   span: 1,
-                  subTitl: "therapy@drkaitwhitcomb.com",
+                  subTitle: "therapy@drkaitwhitcomb.com",
                   title: `870 Clark St. ste #1020
 
                   Oviedo, FL 32765
