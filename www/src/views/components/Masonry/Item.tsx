@@ -3,7 +3,7 @@ import { MasonryItemProps } from "@/models/typings";
 import { columnSpanSx } from "@styles/index";
 
 export function defaultSx() {
-  return `z-10 h-auto w-auto flex bg-[#C8C8C8] flex-shrink-0 
+  return `z-10 h-auto w-auto flex bg-[#C8C8C8] flex-grow 
   justify-center items-center m-1  cursor-pointer hover:bg-opacity-80
    flex flex-col justify-center duration-500 ease-in-out  rounded-sm hover:shadow-lg shadow-black`;
 }

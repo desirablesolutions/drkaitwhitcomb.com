@@ -107,8 +107,8 @@ export const pages: PageStoreType = {
           },
           items: [
             {
-              type: "callout",
-              title: "About Dr. Kait Whitcomb",
+              type: "header",
+              content: "About Dr. Kait Whitcomb",
               span: 3,
             },
           ],

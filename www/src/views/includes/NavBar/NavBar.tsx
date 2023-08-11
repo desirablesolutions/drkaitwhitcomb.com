@@ -47,7 +47,7 @@ export default function NavBar(props: NavBarProps) {
           </a>
         </div>
       </main>
-      <div className="flex mb-2 justify-center h-full overflow-hidden w-full sm:w-1/2 sm:gap-4 gap-8 mt-2 overflow-x-hidden border-black border-opacity-100 no-scrollbar border-seperate border-1">
+      <div className="flex mb-2 justify-center h-full overflow-hidden w-full  gap-8 mt-2 overflow-x-hidden border-black border-opacity-100 no-scrollbar border-seperate border-1">
         {defaultProps().links.map((link) => (
           <Link key={tuid()} link={link} />
         ))}

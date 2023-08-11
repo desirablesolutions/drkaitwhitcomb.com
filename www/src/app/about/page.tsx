@@ -8,7 +8,7 @@ export default async function About() {
   const { masonry } = data;
 
   return (
-    <main className="flex flex-col items-center justify-between min-h-screen ">
+    <main className="flex flex-col items-center m-0 p-0 -mt-20 justify-between min-h-screen ">
       <Masonry masonry={masonry} />
     </main>
   );
