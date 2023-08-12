@@ -90,3 +90,10 @@ export type TailwindColumnSpanType =
     data: any;
   };
   
+
+
+  
+export type FooterProps = {
+  copyright?: string[];
+  tag?: string;
+};
