@@ -6,7 +6,7 @@ export default function Navigator() {
         <div data-dial-init="" className="fixed lg:hidden right-6 bottom-6 group ">
   <div
     id="speed-dial-menu-bottom-right"
-    className="flex flex-col items-center hidden mb-4 space-y-2"
+    className="flex-col items-center hidden mb-4 space-y-2 sm:flex"
   >
     <button
       type="button"

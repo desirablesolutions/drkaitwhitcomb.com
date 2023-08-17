@@ -65,7 +65,7 @@ export const pages: PageStoreType = {
             },
             {
               columns: 1,
-              gap: 2,
+              gap: 1,
               span: 1,
 
               items: [

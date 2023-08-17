@@ -1,14 +1,17 @@
-import { Thasadith } from "next/font/google";
+import { Manrope } from "next/font/google";
 
-const web_font = Thasadith({
-  weight: "400",
+const web_font = Manrope({
+  weight: "200",
   subsets: ["latin"],
 });
 
-export default function Container({ children, className }: any) {
+
+export default async function Container({ children, className  }: any) {
+ 
+
   return (
     <html lang="en">
-      <body className={`${web_font.className} ${className ?? ""}`}>{children}</body>
+      <body className={`${web_font.className} tracking-wide ${className ?? ""}`}>{children}</body>
     </html>
   );
 }
