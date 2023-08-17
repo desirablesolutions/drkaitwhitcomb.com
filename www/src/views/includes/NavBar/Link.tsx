@@ -5,10 +5,10 @@ export default function NavBarLink({ link }: { link: any}) {
     return (
         
         <a
-        className="flex items-center content-center justify-center mt-2 text-center border-r border-black group"
+        className="flex items-center content-center justify-center mt-2 text-center group"
         href={url ?? ""}
       >
-        <span className="relative pr-10 mr-0 text-black duration-500 group-hover:-transpate-y-2 hover:text-shadow shadow-black whitespace-nowrap hover:text-green-200">
+        <span className="relative text-black duration-500 group-hover:-translate-y-2 hover:text-shadow shadow-black whitespace-nowrap hover:text-green-200">
           {title ?? "Home"}
         </span>
       </a>

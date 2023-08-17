@@ -5,9 +5,11 @@ import { tuid } from "@/controllers/utils"
 
 export default function Links({ links }: { links: NavBarProps["links"]}) {
     return (
-        <div className="flex mb-2 justify-center h-full overflow-hidden w-full  gap-8 mt-2 overflow-x-hidden border-black border-opacity-100 no-scrollbar border-seperate border-1">
-        {links.map((link: LinkProps) => (
-          <Link key={tuid()} link={link} />
+        <div className="items-center justify-center hidden w-full h-full mt-2 mb-2 overflow-hidden overflow-x-hidden border-black border-opacity-100 gap-44 lg:flex no-scrollbar border-seperate border-1">
+        {links?.map((link: LinkProps) => (
+         
+         <Link key={tuid()} link={link} />
+
         ))}
       </div>
     )

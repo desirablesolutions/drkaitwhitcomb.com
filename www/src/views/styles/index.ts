@@ -35,10 +35,10 @@ export function gapSx(gap: number): TailwindClassList {
 }
 
 export function columnSpanSx(span: number): TailwindClassList {
-  const presets: TailwindColumnSpanType[] = [
+  const presets: any[] = [
     "col-span-1",
 
-    "col-span-2",
+    "col-span-1  lg:col-span-2",
 
     "col-span-3",
     "col-span-4",

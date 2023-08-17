@@ -5,7 +5,7 @@ import NavBar from "@includes/NavBar";
 import type { Metadata } from "next";
 import Footer from "@includes/Footer";
 import { Thasadith } from "next/font/google";
-
+import Navigator from "@includes/Navigator"
 export async function generateMetadata(): Promise<Metadata> {
   return  {
     title: "Dr. Kait Whitcomb, LLC | Licensed Psychologist",
@@ -30,10 +30,11 @@ export default function RootLayout({
   
   return (
     <html lang="en">
-      <body className={`${web_font.className}`}>
+      <body className={`${web_font.className} bg-white`}>
         <NavBar />
         {children}
         <Footer />
+        <Navigator />
       </body>
     </html>
   );
