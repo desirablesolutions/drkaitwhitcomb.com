@@ -15,7 +15,7 @@ export default function NavigatorCover() {
   viewBox="0 0 375 374.999991"
   height={500}
   preserveAspectRatio="xMidYMid meet"
-  version={1.0}
+
 >
   <defs>
     <filter x="0%" y="0%" width="100%" height="100%" id="034b310e6c">

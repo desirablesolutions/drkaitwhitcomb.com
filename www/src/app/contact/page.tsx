@@ -8,7 +8,7 @@ export default async function Contact() {
   const { masonry } = data;
 
   return (
-    <main className="flex flex-col items-center justify-between min-h-screen p-0 m-0 -mt-20">
+    <main className="flex flex-col items-center justify-between min-h-screen p-0 m-0">
       <Masonry masonry={masonry} />
     </main>
   );
