@@ -31,7 +31,7 @@ export default function Reanimator(props: any) {
   let { children } = props
 
   return (
-    <motion.div {...animationsSx}>
+    <motion.div className="relative h-auto m-0 -mt-24 top-10" {...animationsSx}>
       {children}
     </motion.div>
   )

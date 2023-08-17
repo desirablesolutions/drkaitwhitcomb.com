@@ -96,4 +96,7 @@ export type TailwindColumnSpanType =
 export type FooterProps = {
   copyright?: string[];
   tag?: string;
+  phoneNumber?: string,
+  emailAddress?: string,
+  links?: LinkProps[]
 };

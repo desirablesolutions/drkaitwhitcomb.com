@@ -11,7 +11,7 @@ export default async function Container({ children, className  }: any) {
 
   return (
     <html lang="en">
-      <body className={`${web_font.className} tracking-wide ${className ?? ""}`}>{children}</body>
+      <body className={`${web_font.className}  ${className ?? ""}`}>{children}</body>
     </html>
   );
 }

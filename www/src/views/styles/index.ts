@@ -34,15 +34,18 @@ export function gapSx(gap: number): TailwindClassList {
   return `${presets[DECREMENT_BY_ONE(gap % presets.length)]}`;
 }
 
+
+
+export const TailwindColSpanPresets = [
+  "col-span-1 lg:col-span-1",
+  "col-span-1 lg:col-span-2",
+  "col-span-1 lg:col-span-3",
+  "col-span-1 lg:col-span-4",
+] as const
+
+export type TailwindColSpanPresetsType = typeof TailwindColSpanPresets
+
 export function columnSpanSx(span: number): TailwindClassList {
-  const presets: any[] = [
-    "col-span-1",
 
-    "col-span-1  lg:col-span-2",
-
-    "col-span-3",
-    "col-span-4",
-  ];
-
-  return `${presets[DECREMENT_BY_ONE(span % presets.length)]}`;
+  return `${TailwindColSpanPresets[DECREMENT_BY_ONE(span % TailwindColSpanPresets.length)]}`;
 }

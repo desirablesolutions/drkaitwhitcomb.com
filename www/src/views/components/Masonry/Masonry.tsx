@@ -51,9 +51,7 @@ export function renderItems(items: Weak<MasonryItemProps[]>) {
             case "callout": {
               return Templates.callout(item);
             }
-            case "map": {
-              return Templates.map(item);
-            }
+            
           }
         })}
       </>
@@ -96,11 +94,9 @@ export default function Masonry({ masonry }: { masonry: MasonryProps }) {
     : (masonry as MasonryProps);
 
   return (
-    <Reanimator>
-      <Container container={!container ? defaultProps().container : container}>
-        {renderItems(items)}
-        {renderGrids(grids)}
-      </Container>
-    </Reanimator>
+    <Container container={!container ? defaultProps().container : container}>
+  {renderItems(items)}
+    {renderGrids(grids)}
+  </Container>
   );
 }

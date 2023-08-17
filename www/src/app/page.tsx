@@ -11,11 +11,9 @@ export default async function Home() {
     const { masonry } = data;
 
     return (
-      <>
-        <main className="flex flex-col items-center justify-between min-h-screen p-2 -mt-24">
-          <Masonry masonry={masonry} />
-        </main>
-      </>
+      <main className="relative flex flex-col items-center justify-between min-h-screen p-2 m-0">
+      <Masonry masonry={masonry} />
+    </main>
     );
   });
 

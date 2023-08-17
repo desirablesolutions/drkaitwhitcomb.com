@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <Container className="font-thin bg-white ">
+    <Container className="font-thin tracking-wide bg-white ">
       <NavBar />
       {children}
       <Footer />
