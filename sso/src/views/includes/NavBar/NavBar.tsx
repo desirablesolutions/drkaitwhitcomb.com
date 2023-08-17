@@ -3,13 +3,13 @@ import Container from "./Container";
 export default function NavBar(props: any) {
   return (
     <Container>
-      <div className="w-full xl:w-auto px-2">
+      <div className="w-full px-2 xl:w-auto">
         <div className="flex items-center justify-between">
           <a className="inline-flex items-center h-8" href="#">
             <img src="trizzle-assets/logos/trizzle-logo.svg" alt="" />
           </a>
           <div className="xl:hidden">
-            <button className="navbar-burger text-gray-400 hover:text-gray-300 focus:outline-none">
+            <button className="text-gray-400 navbar-burger hover:text-gray-300 focus:outline-none">
               <svg
                 width={20}
                 height={12}
@@ -26,7 +26,7 @@ export default function NavBar(props: any) {
             </button>
           </div>
         </div>
-        <div className="hidden xl:inline-flex h-14 p-3 items-center w-full max-w-sm xl:max-w-md bg-gray-700 border border-gray-400 rounded-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute items-center hidden w-full max-w-sm p-3 transform -translate-x-1/2 -translate-y-1/2 bg-gray-700 border border-gray-400 rounded-lg xl:inline-flex h-14 xl:max-w-md top-1/2 left-1/2">
           <a
             className="inline-block text-gray-400 hover:text-gray-300"
             href="#"
@@ -45,14 +45,14 @@ export default function NavBar(props: any) {
             </svg>
           </a>
           <input
-            className="pl-3 bg-transparent text-gray-100 placeholder-gray-400 outline-none"
+            className="pl-3 text-gray-100 placeholder-gray-400 bg-transparent outline-none"
             id="horizontalNavInput6-1"
             type="text"
             placeholder="Search..."
           />
         </div>
       </div>
-      <div className="hidden xl:block w-full md:w-auto px-2">
+      <div className="hidden w-full px-2 xl:block md:w-auto">
         <div className="flex flex-wrap items-center -mb-2">
           <a
             className="inline-block mb-2 mr-6 text-gray-400 hover:text-gray-300"
@@ -88,13 +88,13 @@ export default function NavBar(props: any) {
               />
             </svg>
           </a>
-          <a className="group inline-flex mb-2 items-center" href="#">
+          <a className="inline-flex items-center mb-2 group" href="#">
             <img
-              className="h-8 w-8 mr-3 rounded-full object-cover"
+              className="object-cover w-8 h-8 mr-3 rounded-full"
               src="trizzle-assets/images/avatar-men.png"
               alt=""
             />
-            <h4 className="text-white font-extrabold tracking-wide mr-4">
+            <h4 className="mr-4 font-extrabold tracking-wide text-white">
               Kait Whitcomb
             </h4>
             <span className="text-gray-400 group-hover:text-gray-300">

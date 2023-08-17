@@ -1,6 +1,11 @@
 import { pages } from "@pages/index"
+import { definePageService } from "blakprint"
 
-export function PageService() {
+definePageService({
+    connection: async () => 0,
+    methods: {},
+})
+export async function PageService() {
 
     const methods = {
         getPage: async (id: string): Promise<any> => {

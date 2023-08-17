@@ -3,7 +3,7 @@ import { PageService } from "@services/page"
 
 export async function usePage(id: string) {
 
-    const { getPage } = PageService()
+    const { getPage } = await PageService()
 
     const pageQuery = await getPage(id)
 
