@@ -63,14 +63,14 @@ export type TailwindColumnSpanType =
   | "col-span-4"
 
 
-  export type ImageProps = {
+  export type ImageProps = Partial<{
     src: string,
     alt: string,
     height: string,
     className: string, 
     width: string,
     loading: string
-  }
+  }>
   
   export type FaviconProps = {
     image: ImageProps
