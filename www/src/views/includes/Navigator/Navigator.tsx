@@ -1,3 +1,6 @@
+import { Dial } from "flowbite";
+
+
 export default function Navigator() {
     return (
         <div data-dial-init="" className="fixed lg:hidden right-6 bottom-6 group ">

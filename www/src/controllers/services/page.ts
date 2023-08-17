@@ -7,6 +7,7 @@ export function PageService() {
             const page = pages.data[id]
             return page
         },
+    
     }
     return { ...methods }
 }

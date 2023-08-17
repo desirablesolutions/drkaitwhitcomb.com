@@ -2,7 +2,7 @@ import Image from "@components/Image";
 import Item from "@components/Masonry/Item";
 import GoogleMapReact from "google-map-react";
 
-const AnyReactComponent = ({ text }: any) => <div className="text-4xl z-50">{text}</div>;
+const AnyReactComponent = ({ text }: any) => <div className="z-50 text-4xl">{text}</div>;
 
 const defaultProps = {
   center: {
@@ -16,7 +16,7 @@ const defaultProps = {
 export const Templates = {
   image: (item: any) => (
     <Item item={item}>
-      <Image className="object-cover bg-center w-full h-full" {...item} />
+      <Image className="object-cover w-full h-full bg-center" {...item} />
     </Item>
   ),
   text: (item: any) => (
@@ -26,15 +26,15 @@ export const Templates = {
   ),
   header: (item: any) => (
     <Item sx="" item={item} >
-      <h1 className="text-6xl text-left p-4">{item.content}</h1>
+      <h1 className="p-4 text-6xl text-left text-white">{item.content}</h1>
     </Item>
   ),
   callout: (item: any) => (
     <Item item={item}>
-      <h1 className="text-4xl py-2 text-left px-6">{item.title}</h1>
-      <h2 className="text-2xl opacity-90 text-left px-4">{item.subTitle}</h2>
-      <blockquote className="text-left py-2 px-4 m-4 text-4xl text-black">{item.content}</blockquote>
-      <a className="text-left text-gray-600 text-2xl border-1 p-4" href={item?.link?.url ?? ""}>{item?.link?.label ?? ""}</a>
+      <h1 className="px-6 py-2 text-4xl text-left text-white">{item.title}</h1>
+      <h2 className="px-4 text-2xl text-left text-white opacity-90">{item.subTitle}</h2>
+      <blockquote className="px-4 py-2 m-4 text-4xl text-left text-black">{item.content}</blockquote>
+      <a className="p-4 text-2xl text-left text-gray-600 border-1" href={item?.link?.url ?? ""}>{item?.link?.label ?? ""}</a>
     </Item>
   ),
   data: (item: any) => (
