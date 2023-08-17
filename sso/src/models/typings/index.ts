@@ -27,7 +27,7 @@ export type ImageProps = {
     actions: LinkProps[]
   }
   export type SideMenuProps = {
-    console?: {
+    console: {
       favicon: FaviconProps,
       menu: SideMenuMenuProps,
       subMenu: SideMenuSubMenuProps
