@@ -13,7 +13,7 @@ export default async function SpacePage() {
 
     return(
     <>
-    <SideMenu sideMenu={pageData.sideMenu}/>
+    <SideMenu />
     <div className="mx-auto lg:ml-80">
        <NavBar/>
         <section className="py-3">
