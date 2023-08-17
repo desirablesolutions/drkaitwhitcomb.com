@@ -3,7 +3,7 @@ import GearSVG from "@components/GearSVG"
 
 export default function Footer({ footer } : { footer: SideMenuProps["footer"]}) {
 
-  const { actions } = footer
+  const actions = footer?.actions
 
 
   function Container({ children } :any) {
@@ -67,7 +67,7 @@ export default function Footer({ footer } : { footer: SideMenuProps["footer"]}) 
     return (
         <Container>
  {
-  actions.map((action) => {
+  actions?.map((action) => {
     return (
       <Action key={Date.now()} action={action}/>
      

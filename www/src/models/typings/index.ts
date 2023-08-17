@@ -73,7 +73,8 @@ export type TailwindColumnSpanType =
   }>
   
   export type FaviconProps = {
-    image: ImageProps
+    image: ImageProps,
+    url: string
   }
 
   export type TailwindClassList = string | string[];
