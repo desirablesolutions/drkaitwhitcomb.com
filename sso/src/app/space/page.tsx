@@ -3,6 +3,8 @@ import NavBar from "@includes/NavBar"
 
 const pageData = {
   sideMenu: {
+    console: {}
+    
   
   }
 }
@@ -16,33 +18,33 @@ export default async function SpacePage() {
        <NavBar/>
         <section className="py-3">
           <div className="container px-4 mx-auto">
-            <div className="relative pt-12 lg:py-18 px-8 md:px-18 rounded-2xl overflow-hidden">
+            <div className="relative px-8 pt-12 overflow-hidden lg:py-18 md:px-18 rounded-2xl">
               <img
-                className="absolute top-0 left-0 h-full w-full object-cover"
+                className="absolute top-0 left-0 object-cover w-full h-full"
                 src="trizzle-assets/images/banner-background.png"
                 alt=""
               />
-              <div className="relative max-w-sm mx-auto lg:mx-0 mb-16 lg:mb-0">
-                <h3 className="text-3xl font-bold text-white mb-3">
+              <div className="relative max-w-sm mx-auto mb-16 lg:mx-0 lg:mb-0">
+                <h3 className="mb-3 text-3xl font-bold text-white">
                   Ideal banner asset for your dashboard project
                 </h3>
-                <p className="font-medium text-blue-200 mb-6">
+                <p className="mb-6 font-medium text-blue-200">
                   Go global with our UI Resources and solutions
                 </p>
                 <a
-                  className="inline-block w-full sm:w-auto px-6 md:px-18 py-3 leading-6 text-center font-semibold text-blue-50 bg-gray-500 hover:bg-gray-600 transition duration-200 rounded-lg"
+                  className="inline-block w-full px-6 py-3 font-semibold leading-6 text-center transition duration-200 bg-gray-500 rounded-lg sm:w-auto md:px-18 text-blue-50 hover:bg-gray-600"
                   href="#"
                 >
                   Get Started
                 </a>
               </div>
               <img
-                className="hidden lg:block absolute bottom-0 right-0 lg:max-w-lg xl:max-w-2xl xl:mr-18"
+                className="absolute bottom-0 right-0 hidden lg:block lg:max-w-lg xl:max-w-2xl xl:mr-18"
                 src="trizzle-assets/images/banner-placeholder-dashboard.png"
                 alt=""
               />
               <img
-                className="relative lg:hidden block mx-auto"
+                className="relative block mx-auto lg:hidden"
                 src="trizzle-assets/images/banner-placeholder-dashboard.png"
                 alt=""
               />
@@ -50,28 +52,28 @@ export default async function SpacePage() {
           </div>
         </section>
         <div className="flex flex-wrap -mx-3 -mb-3 md:mb-0">
-          <div className="w-full md:w-1/3 px-3 mb-3 md:mb-0">
+          <div className="w-full px-3 mb-3 md:w-1/3 md:mb-0">
             <section className="py-3">
               <div className="container px-4 mx-auto">
                 <a
-                  className="block p-4 bg-gray-600 rounded-xl hover:bg-gray-700 transition duration-200"
+                  className="block p-4 transition duration-200 bg-gray-600 rounded-xl hover:bg-gray-700"
                   href="#"
                 >
-                  <h4 className="text-white font-semibold leading-6 mb-1">
+                  <h4 className="mb-1 font-semibold leading-6 text-white">
                     Shuffle Improvements
                   </h4>
                   <div className="flex items-center mb-4">
-                    <span className="h-2 w-2 mr-1 bg-green-500 rounded-full" />
+                    <span className="w-2 h-2 mr-1 bg-green-500 rounded-full" />
                     <span className="text-xs font-medium text-green-500">
                       Planning
                     </span>
                   </div>
                   <img
-                    className="block w-full h-28 object-cover rounded-md mb-3"
+                    className="block object-cover w-full mb-3 rounded-md h-28"
                     src="trizzle-assets/images/laptop-photo-placeholder.png"
                     alt=""
                   />
-                  <p className="text-xs text-gray-300 mb-4">
+                  <p className="mb-4 text-xs text-gray-300">
                     This is an example task that can be used within a Kanban
                     system.
                   </p>
@@ -135,14 +137,14 @@ export default async function SpacePage() {
                         </div>
                       </div>
                       <div className="w-auto p-2">
-                        <div className="flex h-full items-center">
+                        <div className="flex items-center h-full">
                           <img
-                            className="w-7 h-7 rounded-full object-cover"
+                            className="object-cover rounded-full w-7 h-7"
                             src="trizzle-assets/images/avatar-women-circle-border.png"
                             alt=""
                           />
                           <img
-                            className="w-7 h-7 -ml-3 rounded-full object-cover"
+                            className="object-cover -ml-3 rounded-full w-7 h-7"
                             src="trizzle-assets/images/avatar-men-2-circle-border.png"
                             alt=""
                           />
@@ -154,28 +156,28 @@ export default async function SpacePage() {
               </div>
             </section>
           </div>
-          <div className="w-full md:w-1/3 px-3 mb-3 md:mb-0">
+          <div className="w-full px-3 mb-3 md:w-1/3 md:mb-0">
             <section className="py-3">
               <div className="container px-4 mx-auto">
                 <a
-                  className="block p-4 bg-gray-600 rounded-xl hover:bg-gray-700 transition duration-200"
+                  className="block p-4 transition duration-200 bg-gray-600 rounded-xl hover:bg-gray-700"
                   href="#"
                 >
-                  <h4 className="text-white font-semibold leading-6 mb-1">
+                  <h4 className="mb-1 font-semibold leading-6 text-white">
                     Shuffle Improvements
                   </h4>
                   <div className="flex items-center mb-4">
-                    <span className="h-2 w-2 mr-1 bg-green-500 rounded-full" />
+                    <span className="w-2 h-2 mr-1 bg-green-500 rounded-full" />
                     <span className="text-xs font-medium text-green-500">
                       Planning
                     </span>
                   </div>
                   <img
-                    className="block w-full h-28 object-cover rounded-md mb-3"
+                    className="block object-cover w-full mb-3 rounded-md h-28"
                     src="trizzle-assets/images/laptop-photo-placeholder.png"
                     alt=""
                   />
-                  <p className="text-xs text-gray-300 mb-4">
+                  <p className="mb-4 text-xs text-gray-300">
                     This is an example task that can be used within a Kanban
                     system.
                   </p>
@@ -239,14 +241,14 @@ export default async function SpacePage() {
                         </div>
                       </div>
                       <div className="w-auto p-2">
-                        <div className="flex h-full items-center">
+                        <div className="flex items-center h-full">
                           <img
-                            className="w-7 h-7 rounded-full object-cover"
+                            className="object-cover rounded-full w-7 h-7"
                             src="trizzle-assets/images/avatar-women-circle-border.png"
                             alt=""
                           />
                           <img
-                            className="w-7 h-7 -ml-3 rounded-full object-cover"
+                            className="object-cover -ml-3 rounded-full w-7 h-7"
                             src="trizzle-assets/images/avatar-men-2-circle-border.png"
                             alt=""
                           />
@@ -258,28 +260,28 @@ export default async function SpacePage() {
               </div>
             </section>
           </div>
-          <div className="w-full md:w-1/3 px-3 mb-3 md:mb-0">
+          <div className="w-full px-3 mb-3 md:w-1/3 md:mb-0">
             <section className="py-3">
               <div className="container px-4 mx-auto">
                 <a
-                  className="block p-4 bg-gray-600 rounded-xl hover:bg-gray-700 transition duration-200"
+                  className="block p-4 transition duration-200 bg-gray-600 rounded-xl hover:bg-gray-700"
                   href="#"
                 >
-                  <h4 className="text-white font-semibold leading-6 mb-1">
+                  <h4 className="mb-1 font-semibold leading-6 text-white">
                     Shuffle Improvements
                   </h4>
                   <div className="flex items-center mb-4">
-                    <span className="h-2 w-2 mr-1 bg-green-500 rounded-full" />
+                    <span className="w-2 h-2 mr-1 bg-green-500 rounded-full" />
                     <span className="text-xs font-medium text-green-500">
                       Planning
                     </span>
                   </div>
                   <img
-                    className="block w-full h-28 object-cover rounded-md mb-3"
+                    className="block object-cover w-full mb-3 rounded-md h-28"
                     src="trizzle-assets/images/laptop-photo-placeholder.png"
                     alt=""
                   />
-                  <p className="text-xs text-gray-300 mb-4">
+                  <p className="mb-4 text-xs text-gray-300">
                     This is an example task that can be used within a Kanban
                     system.
                   </p>
@@ -343,14 +345,14 @@ export default async function SpacePage() {
                         </div>
                       </div>
                       <div className="w-auto p-2">
-                        <div className="flex h-full items-center">
+                        <div className="flex items-center h-full">
                           <img
-                            className="w-7 h-7 rounded-full object-cover"
+                            className="object-cover rounded-full w-7 h-7"
                             src="trizzle-assets/images/avatar-women-circle-border.png"
                             alt=""
                           />
                           <img
-                            className="w-7 h-7 -ml-3 rounded-full object-cover"
+                            className="object-cover -ml-3 rounded-full w-7 h-7"
                             src="trizzle-assets/images/avatar-men-2-circle-border.png"
                             alt=""
                           />
@@ -367,11 +369,11 @@ export default async function SpacePage() {
           <div className="container px-4 mx-auto">
             <div className="mb-6">
               <div className="flex flex-wrap items-center -mx-3 -mb-6">
-                <div className="w-full sm:w-1/2 xl:w-1/4 px-3 mb-6">
-                  <div className="max-w-xs md:max-w-none mx-auto p-6 bg-gray-500 rounded-xl">
+                <div className="w-full px-3 mb-6 sm:w-1/2 xl:w-1/4">
+                  <div className="max-w-xs p-6 mx-auto bg-gray-500 md:max-w-none rounded-xl">
                     <div className="flex flex-wrap items-center -m-2">
                       <div className="w-auto p-2">
-                        <div className="flex flex-shrink-0 w-12 h-12 items-center justify-center bg-blue-500 bg-opacity-20 text-blue-500 rounded-xl">
+                        <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-blue-500 bg-blue-500 bg-opacity-20 rounded-xl">
                           <svg
                             width={22}
                             height={22}
@@ -387,12 +389,12 @@ export default async function SpacePage() {
                         </div>
                       </div>
                       <div className="w-auto p-2">
-                        <h5 className="text-xs text-gray-300 leading-5 font-semibold">
+                        <h5 className="text-xs font-semibold leading-5 text-gray-300">
                           Value
                         </h5>
                         <div className="flex flex-wrap items-center -m-1">
                           <div className="w-auto p-1">
-                            <span className="text-2xl leading-none text-gray-100 font-semibold">
+                            <span className="text-2xl font-semibold leading-none text-gray-100">
                               3.500
                             </span>
                           </div>
@@ -406,11 +408,11 @@ export default async function SpacePage() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full sm:w-1/2 xl:w-1/4 px-3 mb-6">
-                  <div className="max-w-xs md:max-w-none mx-auto p-6 bg-gray-500 rounded-xl">
+                <div className="w-full px-3 mb-6 sm:w-1/2 xl:w-1/4">
+                  <div className="max-w-xs p-6 mx-auto bg-gray-500 md:max-w-none rounded-xl">
                     <div className="flex flex-wrap items-center -m-2">
                       <div className="w-auto p-2">
-                        <div className="flex flex-shrink-0 w-12 h-12 items-center justify-center bg-blue-500 bg-opacity-20 text-blue-500 rounded-xl">
+                        <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-blue-500 bg-blue-500 bg-opacity-20 rounded-xl">
                           <svg
                             width={22}
                             height={18}
@@ -426,12 +428,12 @@ export default async function SpacePage() {
                         </div>
                       </div>
                       <div className="w-auto p-2">
-                        <h5 className="text-xs text-gray-300 leading-5 font-semibold">
+                        <h5 className="text-xs font-semibold leading-5 text-gray-300">
                           Clients
                         </h5>
                         <div className="flex flex-wrap items-center -m-1">
                           <div className="w-auto p-1">
-                            <span className="text-2xl leading-none text-gray-100 font-semibold">
+                            <span className="text-2xl font-semibold leading-none text-gray-100">
                               245
                             </span>
                           </div>
@@ -445,11 +447,11 @@ export default async function SpacePage() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full sm:w-1/2 xl:w-1/4 px-3 mb-6">
-                  <div className="max-w-xs md:max-w-none mx-auto p-6 bg-gray-500 rounded-xl">
+                <div className="w-full px-3 mb-6 sm:w-1/2 xl:w-1/4">
+                  <div className="max-w-xs p-6 mx-auto bg-gray-500 md:max-w-none rounded-xl">
                     <div className="flex flex-wrap items-center -m-2">
                       <div className="w-auto p-2">
-                        <div className="flex flex-shrink-0 w-12 h-12 items-center justify-center bg-blue-500 bg-opacity-20 text-blue-500 rounded-xl">
+                        <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-blue-500 bg-blue-500 bg-opacity-20 rounded-xl">
                           <svg
                             width={20}
                             height={16}
@@ -465,12 +467,12 @@ export default async function SpacePage() {
                         </div>
                       </div>
                       <div className="w-auto p-2">
-                        <h5 className="text-xs text-gray-300 leading-5 font-semibold">
+                        <h5 className="text-xs font-semibold leading-5 text-gray-300">
                           Deliveries
                         </h5>
                         <div className="flex flex-wrap items-center -m-1">
                           <div className="w-auto p-1">
-                            <span className="text-2xl leading-none text-gray-100 font-semibold">
+                            <span className="text-2xl font-semibold leading-none text-gray-100">
                               16.5K
                             </span>
                           </div>
@@ -484,11 +486,11 @@ export default async function SpacePage() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full sm:w-1/2 xl:w-1/4 px-3 mb-6">
-                  <div className="max-w-xs md:max-w-none mx-auto p-6 bg-gray-500 rounded-xl">
+                <div className="w-full px-3 mb-6 sm:w-1/2 xl:w-1/4">
+                  <div className="max-w-xs p-6 mx-auto bg-gray-500 md:max-w-none rounded-xl">
                     <div className="flex flex-wrap items-center -m-2">
                       <div className="w-auto p-2">
-                        <div className="flex flex-shrink-0 w-12 h-12 items-center justify-center bg-blue-500 bg-opacity-20 text-blue-500 rounded-xl">
+                        <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-blue-500 bg-blue-500 bg-opacity-20 rounded-xl">
                           <svg
                             width={20}
                             height={20}
@@ -504,12 +506,12 @@ export default async function SpacePage() {
                         </div>
                       </div>
                       <div className="w-auto p-2">
-                        <h5 className="text-xs text-gray-300 leading-5 font-semibold">
+                        <h5 className="text-xs font-semibold leading-5 text-gray-300">
                           Target ratio
                         </h5>
                         <div className="flex flex-wrap items-center -m-1">
                           <div className="w-auto p-1">
-                            <span className="text-2xl leading-none text-gray-100 font-semibold">
+                            <span className="text-2xl font-semibold leading-none text-gray-100">
                               88%
                             </span>
                           </div>
@@ -527,9 +529,9 @@ export default async function SpacePage() {
             </div>
             <div className="mb-6">
               <div className="flex flex-wrap -mx-3 -mb-6">
-                <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
-                  <div className="h-full max-w-sm mx-auto p-6 bg-gray-500 rounded-xl">
-                    <div className="flex flex-shrink-0 w-12 h-12 mb-4 items-center justify-center bg-blue-500 bg-opacity-20 text-blue-500 rounded-xl">
+                <div className="w-full px-3 mb-6 md:w-1/2 lg:w-1/4">
+                  <div className="h-full max-w-sm p-6 mx-auto bg-gray-500 rounded-xl">
+                    <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mb-4 text-blue-500 bg-blue-500 bg-opacity-20 rounded-xl">
                       <svg
                         width={20}
                         height={20}
@@ -543,27 +545,27 @@ export default async function SpacePage() {
                         />
                       </svg>
                     </div>
-                    <h5 className="text-lg text-gray-100 font-semibold mb-8">
+                    <h5 className="mb-8 text-lg font-semibold text-gray-100">
                       Drive Storage
                     </h5>
-                    <div className="flex mb-2 items-center justify-between">
-                      <span className="text-xs text-blue-500 font-semibold">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xs font-semibold text-blue-500">
                         45 GB
                       </span>
-                      <span className="text-xs text-gray-300 font-semibold">
+                      <span className="text-xs font-semibold text-gray-300">
                         100 GB
                       </span>
                     </div>
                     <div className="relative py-1 bg-gray-700 rounded-full">
-                      <div className="absolute top-0 left-0 h-full w-2/3 bg-blue-500 rounded-full" />
+                      <div className="absolute top-0 left-0 w-2/3 h-full bg-blue-500 rounded-full" />
                     </div>
                   </div>
                 </div>
-                <div className="w-full md:w-1/2 lg:w-1/4 px-3 mb-6">
-                  <div className="relative h-full max-w-sm mx-auto p-6 bg-gray-500 rounded-xl">
+                <div className="w-full px-3 mb-6 md:w-1/2 lg:w-1/4">
+                  <div className="relative h-full max-w-sm p-6 mx-auto bg-gray-500 rounded-xl">
                     <div className="flex flex-wrap items-center justify-between mb-4 -m-2">
                       <div className="w-auto p-2">
-                        <div className="flex flex-shrink-0 w-12 h-12 items-center justify-center bg-blue-500 bg-opacity-20 text-blue-500 rounded-xl">
+                        <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-blue-500 bg-blue-500 bg-opacity-20 rounded-xl">
                           <svg
                             width={21}
                             height={21}
@@ -581,37 +583,37 @@ export default async function SpacePage() {
                       <div className="w-auto p-2">
                         <div className="flex">
                           <img
-                            className="w-7 h-7 rounded-full object-cover"
+                            className="object-cover rounded-full w-7 h-7"
                             src="trizzle-assets/images/avatar-women-circle-border.png"
                             alt=""
                           />
                           <img
-                            className="w-7 h-7 -ml-2 rounded-full object-cover"
+                            className="object-cover -ml-2 rounded-full w-7 h-7"
                             src="trizzle-assets/images/avatar-men-circle-border.png"
                             alt=""
                           />
                         </div>
                       </div>
                     </div>
-                    <h5 className="text-lg text-gray-100 font-semibold mb-12">
+                    <h5 className="mb-12 text-lg font-semibold text-gray-100">
                       Research
                     </h5>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-gray-300 font-semibold">
+                      <span className="text-sm font-semibold text-gray-300">
                         10 Files
                       </span>
-                      <span className="text-sm text-gray-300 font-semibold">
+                      <span className="text-sm font-semibold text-gray-300">
                         5 GB
                       </span>
                     </div>
                   </div>
                 </div>
-                <div className="w-full lg:w-2/4 px-3 mb-6">
-                  <div className="relative h-full max-w-sm md:max-w-none mx-auto p-6 bg-gray-500 rounded-xl">
+                <div className="w-full px-3 mb-6 lg:w-2/4">
+                  <div className="relative h-full max-w-sm p-6 mx-auto bg-gray-500 md:max-w-none rounded-xl">
                     <div className="flex flex-wrap items-center justify-between -mx-2">
-                      <div className="w-full md:w-1/2 px-2 mb-12 md:mb-0">
-                        <div className="max-w-xxs pr-12">
-                          <div className="flex flex-shrink-0 w-12 h-12 mb-9 items-center justify-center bg-blue-500 bg-opacity-20 text-blue-500 rounded-xl">
+                      <div className="w-full px-2 mb-12 md:w-1/2 md:mb-0">
+                        <div className="pr-12 max-w-xxs">
+                          <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-blue-500 bg-blue-500 mb-9 bg-opacity-20 rounded-xl">
                             <svg
                               width={20}
                               height={20}
@@ -625,25 +627,25 @@ export default async function SpacePage() {
                               />
                             </svg>
                           </div>
-                          <h5 className="text-lg text-gray-100 font-semibold mb-1">
+                          <h5 className="mb-1 text-lg font-semibold text-gray-100">
                             Used percentage
                           </h5>
-                          <p className="text-sm text-gray-300 font-semibold">
+                          <p className="text-sm font-semibold text-gray-300">
                             Check your storage on your dashboard
                           </p>
                         </div>
                       </div>
-                      <div className="w-full md:w-1/2 px-2">
+                      <div className="w-full px-2 md:w-1/2">
                         <div
-                          className="chart px-2"
+                          className="px-2 chart"
                           data-type="radial-bar-part"
                           style={{ minHeight: 120 }}
                         />
                         <div className="flex items-end justify-center -mt-12">
-                          <span className="text-3xl leading-none text-gray-200 font-semibold">
+                          <span className="text-3xl font-semibold leading-none text-gray-200">
                             64
                           </span>
-                          <span className="text-2xl leading-none text-gray-400 font-semibold">
+                          <span className="text-2xl font-semibold leading-none text-gray-400">
                             %
                           </span>
                         </div>
@@ -654,16 +656,16 @@ export default async function SpacePage() {
               </div>
             </div>
             <div className="px-6 pt-6 pb-8 bg-gray-500 rounded-xl">
-              <div className="flex flex-wrap -mx-3 -mb-4 justify-between items-center">
+              <div className="flex flex-wrap items-center justify-between -mx-3 -mb-4">
                 <div className="w-auto px-3 mb-4">
-                  <h4 className="text-gray-100 font-bold tracking-wide">
+                  <h4 className="font-bold tracking-wide text-gray-100">
                     Work Performance
                   </h4>
                 </div>
                 <div className="w-auto px-3 mb-4">
                   <div className="relative inline-block bg-gray-600 rounded-xl">
                     <select
-                      className="relative py-2 pl-4 pr-8 cursor-pointer bg-transparent text-xs text-gray-300 font-semibold appearance-none outline-none"
+                      className="relative py-2 pl-4 pr-8 text-xs font-semibold text-gray-300 bg-transparent outline-none appearance-none cursor-pointer"
                       style={{ zIndex: 1 }}
                       name=""
                       id=""
@@ -672,7 +674,7 @@ export default async function SpacePage() {
                       <option value="">Last Week</option>
                     </select>
                     <span
-                      className="absolute top-1/2 right-0 mr-2 transform -translate-y-1/2"
+                      className="absolute right-0 mr-2 transform -translate-y-1/2 top-1/2"
                       style={{ zIndex: 0 }}
                     >
                       <svg
@@ -694,34 +696,34 @@ export default async function SpacePage() {
                   </div>
                 </div>
               </div>
-              <div className="w-full mt-6 pb-4 overflow-x-auto">
+              <div className="w-full pb-4 mt-6 overflow-x-auto">
                 <table className="w-full min-w-max">
                   <thead>
                     <tr className="text-left">
                       <th className="p-0">
-                        <div className="py-3 px-6 rounded-l-xl bg-gray-700">
-                          <span className="text-xs text-gray-300 font-semibold">
+                        <div className="px-6 py-3 bg-gray-700 rounded-l-xl">
+                          <span className="text-xs font-semibold text-gray-300">
                             TASK
                           </span>
                         </div>
                       </th>
                       <th className="p-0">
-                        <div className="py-3 px-6 bg-gray-700">
-                          <span className="text-xs text-gray-300 font-semibold">
+                        <div className="px-6 py-3 bg-gray-700">
+                          <span className="text-xs font-semibold text-gray-300">
                             STATUS
                           </span>
                         </div>
                       </th>
                       <th className="p-0">
-                        <div className="py-3 px-6 bg-gray-700">
-                          <span className="text-xs text-gray-300 font-semibold">
+                        <div className="px-6 py-3 bg-gray-700">
+                          <span className="text-xs font-semibold text-gray-300">
                             TEAM
                           </span>
                         </div>
                       </th>
                       <th className="p-0">
-                        <div className="py-3 px-5 rounded-r-xl bg-gray-700">
-                          <span className="text-xs text-gray-300 font-semibold">
+                        <div className="px-5 py-3 bg-gray-700 rounded-r-xl">
+                          <span className="text-xs font-semibold text-gray-300">
                             ESTIMATED DATE
                           </span>
                         </div>
@@ -739,7 +741,7 @@ export default async function SpacePage() {
                       </td>
                       <td className="p-0">
                         <div className="h-16 p-6">
-                          <div className="flex h-full items-center">
+                          <div className="flex items-center h-full">
                             <span className="inline-block w-2 h-2 mr-1 bg-green-500 rounded-full" />
                             <span className="text-sm font-medium text-gray-100">
                               Done
@@ -749,19 +751,19 @@ export default async function SpacePage() {
                       </td>
                       <td className="p-0">
                         <div className="h-16 p-6">
-                          <div className="flex h-full items-center">
+                          <div className="flex items-center h-full">
                             <img
-                              className="w-7 h-7 rounded-full object-cover"
+                              className="object-cover rounded-full w-7 h-7"
                               src="trizzle-assets/images/avatar-women-circle-border.png"
                               alt=""
                             />
                             <img
-                              className="w-7 h-7 -ml-3 rounded-full object-cover"
+                              className="object-cover -ml-3 rounded-full w-7 h-7"
                               src="trizzle-assets/images/avatar-men-circle-border.png"
                               alt=""
                             />
                             <img
-                              className="w-7 h-7 -ml-3 rounded-full object-cover"
+                              className="object-cover -ml-3 rounded-full w-7 h-7"
                               src="trizzle-assets/images/avatar-men-2-circle-border.png"
                               alt=""
                             />
@@ -770,7 +772,7 @@ export default async function SpacePage() {
                       </td>
                       <td className="p-0">
                         <div className="h-16 p-6">
-                          <span className="text-sm text-gray-100 font-medium">
+                          <span className="text-sm font-medium text-gray-100">
                             July 06, 2022
                           </span>
                         </div>
@@ -778,14 +780,14 @@ export default async function SpacePage() {
                     </tr>
                     <tr>
                       <td className="p-0">
-                        <div className="h-16 p-6 rounded-l-xl bg-gray-700">
+                        <div className="h-16 p-6 bg-gray-700 rounded-l-xl">
                           <h5 className="text-sm font-medium text-gray-100">
                             SEO Integrations
                           </h5>
                         </div>
                       </td>
                       <td className="p-0">
-                        <div className="flex h-16 p-6 items-center bg-gray-700">
+                        <div className="flex items-center h-16 p-6 bg-gray-700">
                           <span className="inline-block w-2 h-2 mr-1 bg-green-500 rounded-full" />
                           <span className="text-sm font-medium text-gray-100">
                             Done
@@ -794,19 +796,19 @@ export default async function SpacePage() {
                       </td>
                       <td className="p-0">
                         <div className="h-16 p-6 bg-gray-700">
-                          <div className="flex h-full items-center">
+                          <div className="flex items-center h-full">
                             <img
-                              className="w-7 h-7 rounded-full object-cover"
+                              className="object-cover rounded-full w-7 h-7"
                               src="trizzle-assets/images/avatar-women-circle-border.png"
                               alt=""
                             />
                             <img
-                              className="w-7 h-7 -ml-3 rounded-full object-cover"
+                              className="object-cover -ml-3 rounded-full w-7 h-7"
                               src="trizzle-assets/images/avatar-men-circle-border.png"
                               alt=""
                             />
                             <img
-                              className="w-7 h-7 -ml-3 rounded-full object-cover"
+                              className="object-cover -ml-3 rounded-full w-7 h-7"
                               src="trizzle-assets/images/avatar-men-2-circle-border.png"
                               alt=""
                             />
@@ -814,7 +816,7 @@ export default async function SpacePage() {
                         </div>
                       </td>
                       <td className="p-0">
-                        <div className="h-16 p-6 rounded-r-xl bg-gray-700">
+                        <div className="h-16 p-6 bg-gray-700 rounded-r-xl">
                           <h5 className="text-sm font-medium text-gray-100">
                             July 06, 2022
                           </h5>
@@ -831,7 +833,7 @@ export default async function SpacePage() {
                       </td>
                       <td className="p-0">
                         <div className="h-16 p-6">
-                          <div className="flex h-full items-center">
+                          <div className="flex items-center h-full">
                             <span className="inline-block w-2 h-2 mr-1 bg-blue-500 rounded-full" />
                             <span className="text-sm font-medium text-gray-100">
                               In progress
@@ -841,19 +843,19 @@ export default async function SpacePage() {
                       </td>
                       <td className="p-0">
                         <div className="h-16 p-6">
-                          <div className="flex h-full items-center">
+                          <div className="flex items-center h-full">
                             <img
-                              className="w-7 h-7 rounded-full object-cover"
+                              className="object-cover rounded-full w-7 h-7"
                               src="trizzle-assets/images/avatar-women-circle-border.png"
                               alt=""
                             />
                             <img
-                              className="w-7 h-7 -ml-3 rounded-full object-cover"
+                              className="object-cover -ml-3 rounded-full w-7 h-7"
                               src="trizzle-assets/images/avatar-men-circle-border.png"
                               alt=""
                             />
                             <img
-                              className="w-7 h-7 -ml-3 rounded-full object-cover"
+                              className="object-cover -ml-3 rounded-full w-7 h-7"
                               src="trizzle-assets/images/avatar-men-2-circle-border.png"
                               alt=""
                             />
@@ -862,7 +864,7 @@ export default async function SpacePage() {
                       </td>
                       <td className="p-0">
                         <div className="h-16 p-6">
-                          <span className="text-sm text-gray-100 font-medium">
+                          <span className="text-sm font-medium text-gray-100">
                             July 06, 2022
                           </span>
                         </div>
@@ -870,14 +872,14 @@ export default async function SpacePage() {
                     </tr>
                     <tr>
                       <td className="p-0">
-                        <div className="h-16 p-6 rounded-l-xl bg-gray-700">
+                        <div className="h-16 p-6 bg-gray-700 rounded-l-xl">
                           <h5 className="text-sm font-medium text-gray-100">
                             CMS Handoff
                           </h5>
                         </div>
                       </td>
                       <td className="p-0">
-                        <div className="flex h-16 p-6 items-center bg-gray-700">
+                        <div className="flex items-center h-16 p-6 bg-gray-700">
                           <span className="inline-block w-2 h-2 mr-1 bg-purple-500 rounded-full" />
                           <span className="text-sm font-medium text-gray-100">
                             Backlog
@@ -886,19 +888,19 @@ export default async function SpacePage() {
                       </td>
                       <td className="p-0">
                         <div className="h-16 p-6 bg-gray-700">
-                          <div className="flex h-full items-center">
+                          <div className="flex items-center h-full">
                             <img
-                              className="w-7 h-7 rounded-full object-cover"
+                              className="object-cover rounded-full w-7 h-7"
                               src="trizzle-assets/images/avatar-women-circle-border.png"
                               alt=""
                             />
                             <img
-                              className="w-7 h-7 -ml-3 rounded-full object-cover"
+                              className="object-cover -ml-3 rounded-full w-7 h-7"
                               src="trizzle-assets/images/avatar-men-circle-border.png"
                               alt=""
                             />
                             <img
-                              className="w-7 h-7 -ml-3 rounded-full object-cover"
+                              className="object-cover -ml-3 rounded-full w-7 h-7"
                               src="trizzle-assets/images/avatar-men-2-circle-border.png"
                               alt=""
                             />
@@ -906,7 +908,7 @@ export default async function SpacePage() {
                         </div>
                       </td>
                       <td className="p-0">
-                        <div className="h-16 p-6 rounded-r-xl bg-gray-700">
+                        <div className="h-16 p-6 bg-gray-700 rounded-r-xl">
                           <h5 className="text-sm font-medium text-gray-100">
                             July 06, 2022
                           </h5>
@@ -923,7 +925,7 @@ export default async function SpacePage() {
                       </td>
                       <td className="p-0">
                         <div className="h-16 p-6">
-                          <div className="flex h-full items-center">
+                          <div className="flex items-center h-full">
                             <span className="inline-block w-2 h-2 mr-1 bg-green-500 rounded-full" />
                             <span className="text-sm font-medium text-gray-100">
                               Done
@@ -933,19 +935,19 @@ export default async function SpacePage() {
                       </td>
                       <td className="p-0">
                         <div className="h-16 p-6">
-                          <div className="flex h-full items-center">
+                          <div className="flex items-center h-full">
                             <img
-                              className="w-7 h-7 rounded-full object-cover"
+                              className="object-cover rounded-full w-7 h-7"
                               src="trizzle-assets/images/avatar-women-circle-border.png"
                               alt=""
                             />
                             <img
-                              className="w-7 h-7 -ml-3 rounded-full object-cover"
+                              className="object-cover -ml-3 rounded-full w-7 h-7"
                               src="trizzle-assets/images/avatar-men-circle-border.png"
                               alt=""
                             />
                             <img
-                              className="w-7 h-7 -ml-3 rounded-full object-cover"
+                              className="object-cover -ml-3 rounded-full w-7 h-7"
                               src="trizzle-assets/images/avatar-men-2-circle-border.png"
                               alt=""
                             />
@@ -954,7 +956,7 @@ export default async function SpacePage() {
                       </td>
                       <td className="p-0">
                         <div className="h-16 p-6">
-                          <span className="text-sm text-gray-100 font-medium">
+                          <span className="text-sm font-medium text-gray-100">
                             July 06, 2022
                           </span>
                         </div>
@@ -962,14 +964,14 @@ export default async function SpacePage() {
                     </tr>
                     <tr>
                       <td className="p-0">
-                        <div className="h-16 p-6 rounded-l-xl bg-gray-700">
+                        <div className="h-16 p-6 bg-gray-700 rounded-l-xl">
                           <h5 className="text-sm font-medium text-gray-100">
                             Onboarding Process
                           </h5>
                         </div>
                       </td>
                       <td className="p-0">
-                        <div className="flex h-16 p-6 items-center bg-gray-700">
+                        <div className="flex items-center h-16 p-6 bg-gray-700">
                           <span className="inline-block w-2 h-2 mr-1 bg-green-500 rounded-full" />
                           <span className="text-sm font-medium text-gray-100">
                             Done
@@ -978,19 +980,19 @@ export default async function SpacePage() {
                       </td>
                       <td className="p-0">
                         <div className="h-16 p-6 bg-gray-700">
-                          <div className="flex h-full items-center">
+                          <div className="flex items-center h-full">
                             <img
-                              className="w-7 h-7 rounded-full object-cover"
+                              className="object-cover rounded-full w-7 h-7"
                               src="trizzle-assets/images/avatar-women-circle-border.png"
                               alt=""
                             />
                             <img
-                              className="w-7 h-7 -ml-3 rounded-full object-cover"
+                              className="object-cover -ml-3 rounded-full w-7 h-7"
                               src="trizzle-assets/images/avatar-men-circle-border.png"
                               alt=""
                             />
                             <img
-                              className="w-7 h-7 -ml-3 rounded-full object-cover"
+                              className="object-cover -ml-3 rounded-full w-7 h-7"
                               src="trizzle-assets/images/avatar-men-2-circle-border.png"
                               alt=""
                             />
@@ -998,7 +1000,7 @@ export default async function SpacePage() {
                         </div>
                       </td>
                       <td className="p-0">
-                        <div className="h-16 p-6 rounded-r-xl bg-gray-700">
+                        <div className="h-16 p-6 bg-gray-700 rounded-r-xl">
                           <h5 className="text-sm font-medium text-gray-100">
                             July 06, 2022
                           </h5>
@@ -1012,22 +1014,22 @@ export default async function SpacePage() {
           </div>
         </section>
         <section>
-          <div className="pt-5 pb-6 px-8 bg-gray-700">
+          <div className="px-8 pt-5 pb-6 bg-gray-700">
             <div className="flex flex-wrap items-center justify-between -mx-2">
-              <div className="w-full lg:w-auto px-2 mb-6 lg:mb-0">
-                <h4 className="text-2xl font-bold text-white tracking-wide leading-7 mb-1">
+              <div className="w-full px-2 mb-6 lg:w-auto lg:mb-0">
+                <h4 className="mb-1 text-2xl font-bold leading-7 tracking-wide text-white">
                   Overview
                 </h4>
                 <p className="text-xs text-gray-300">
                   Get daily review of your recent activities
                 </p>
               </div>
-              <div className="w-full lg:w-auto px-2">
-                <div className="sm:flex items-center">
-                  <div className="w-full sm:w-auto mb-6 sm:mb-0 sm:mr-4">
+              <div className="w-full px-2 lg:w-auto">
+                <div className="items-center sm:flex">
+                  <div className="w-full mb-6 sm:w-auto sm:mb-0 sm:mr-4">
                     <div className="flex flex-wrap items-center -mb-2">
                       <a
-                        className="inline-flex items-center justify-center w-12 h-12 mb-2 mr-4 p-1 text-gray-300 bg-gray-500 hover:bg-gray-400 hover:bg-opacity-40 transition duration-150 rounded-full"
+                        className="inline-flex items-center justify-center w-12 h-12 p-1 mb-2 mr-4 text-gray-300 transition duration-150 bg-gray-500 rounded-full hover:bg-gray-400 hover:bg-opacity-40"
                         href="#"
                       >
                         <svg
@@ -1044,7 +1046,7 @@ export default async function SpacePage() {
                         </svg>
                       </a>
                       <a
-                        className="inline-flex items-center justify-center w-12 h-12 mb-2 mr-4 p-1 text-gray-300 bg-gray-500 hover:bg-gray-400 hover:bg-opacity-40 transition duration-150 rounded-full"
+                        className="inline-flex items-center justify-center w-12 h-12 p-1 mb-2 mr-4 text-gray-300 transition duration-150 bg-gray-500 rounded-full hover:bg-gray-400 hover:bg-opacity-40"
                         href="#"
                       >
                         <svg
@@ -1061,7 +1063,7 @@ export default async function SpacePage() {
                         </svg>
                       </a>
                       <a
-                        className="inline-flex items-center justify-center w-12 h-12 mb-2 p-1 text-gray-300 bg-gray-500 hover:bg-gray-400 hover:bg-opacity-40 transition duration-150 rounded-full"
+                        className="inline-flex items-center justify-center w-12 h-12 p-1 mb-2 text-gray-300 transition duration-150 bg-gray-500 rounded-full hover:bg-gray-400 hover:bg-opacity-40"
                         href="#"
                       >
                         <svg
@@ -1081,15 +1083,15 @@ export default async function SpacePage() {
                   </div>
                   <div className="w-full sm:w-auto">
                     <a
-                      className="inline-flex items-center justify-center py-2 pl-2 pr-3 bg-gray-500 hover:bg-gray-400 hover:bg-opacity-40 transition duration-150 rounded-full"
+                      className="inline-flex items-center justify-center py-2 pl-2 pr-3 transition duration-150 bg-gray-500 rounded-full hover:bg-gray-400 hover:bg-opacity-40"
                       href="#"
                     >
                       <img
-                        className="h-8 w-8 mr-3 rounded-full object-cover"
+                        className="object-cover w-8 h-8 mr-3 rounded-full"
                         src="trizzle-assets/images/avatar-men.png"
                         alt=""
                       />
-                      <h4 className="text-white font-extrabold tracking-wide mr-5">
+                      <h4 className="mr-5 font-extrabold tracking-wide text-white">
                         John Doe
                       </h4>
                       <svg
