@@ -1,5 +1,6 @@
 import type { LinkProps, SideMenuProps } from "@/models/typings";
 import MenuSVG from "@/views/components/MenuSVG/MenuSVG";
+
 export function Favicon({
   favicon,
 }: {
@@ -26,7 +27,7 @@ export function Menu({ menu }: { menu: SideMenuProps["console"]["menu"] }) {
           return (
             <li key={Date.now()} className="mb-4">
               <a
-                className="hover:shadow-2xl shadow-white cursor-pointer flex items-center p-3 text-black bg-green-200 rounded-md"
+                className="flex items-center p-3 text-black bg-green-200 rounded-md cursor-pointer hover:shadow-2xl shadow-white"
                 href="#"
               >
                 <MenuSVG />

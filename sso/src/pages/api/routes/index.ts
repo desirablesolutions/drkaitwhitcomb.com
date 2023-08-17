@@ -1,3 +1,9 @@
-export default function handler({ req, res}: any) {
-    res.status(200).json({ name: 'John Doe' })
+
+import { default as getRoute } from "@hooks/useRoute"
+
+export default async function handler({ req, res}: any) {
+
+  const data = await getRoute(`${req}`)
+
+    res.status(200).json(data)
   }
