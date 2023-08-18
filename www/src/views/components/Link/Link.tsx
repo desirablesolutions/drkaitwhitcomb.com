@@ -1,4 +1,4 @@
-export default function Link({ children, ...props}) {
+export default function Link({ children, ...props}: any) {
     return (
         <a {...props}>
             {children}
