@@ -48,7 +48,7 @@ export function DataTemplate({ item }: any) {
 export function HeaderTemplate({ item }: any) {
   return (
     <Item sx="bg-black" item={item} >
-      <h1 className="pt-6 text-4xl text-left text-white">{item.content}</h1>
+      <h1 className="p-2 text-3xl text-center text-white">{item.content}</h1>
     </Item>
   )
 }

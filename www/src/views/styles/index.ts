@@ -29,7 +29,7 @@ export function rowsSx(rows: number): TailwindClassList {
 }
 
 export function gapSx(gap: number): TailwindClassList {
-  const presets: TailwindGridGapType[] = ["gap-2", "gap-4", "gap-6", "gap-8"];
+  const presets: any[] = ["gap-0.5", "gap-4", "gap-6", "gap-8"];
 
   return `${presets[DECREMENT_BY_ONE(gap % presets.length)]}`;
 }
