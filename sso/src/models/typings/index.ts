@@ -23,7 +23,10 @@ export type ImageProps = {
         authentication: {},
         footer: {}
       },
-      header: {}
+      header: {
+        subTitle: string,
+        title: string
+      }
       
     }
   }

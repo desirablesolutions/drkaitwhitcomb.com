@@ -1,7 +1,9 @@
 import { AuthenticatorProps } from "@/models/typings";
 import { default as FormData } from "./FormData";
 
-export function Header({ title, subTitle }: any) {
+export function Header({ header }: { header:  AuthenticatorProps["form"]["header"]}) {
+
+  const { title , subTitle } = header
   return (
     <div className="mb-10 text-center">
       <h2 className="mb-2 text-2xl font-semibold text-black">{title}</h2>

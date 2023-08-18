@@ -5,7 +5,7 @@ import type { AuthenticatorProps } from "@typings/index";
 import { defaultProps } from "./defaults"
 
 
-export default function Authenticator({ authenticator }: {authenticator?: AuthenticatorProps}) {
+export default function Authenticator({ authenticator }: {authenticator: AuthenticatorProps}) {
   
 
   return (
