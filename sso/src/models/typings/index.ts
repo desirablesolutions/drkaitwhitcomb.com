@@ -11,9 +11,12 @@ export type ImageProps = {
     label: string
   }
   export type AuthenticatorProps = {
-    title?: string,
-    subTitle?: string,
-    favicon?: FaviconProps
+    branding: {
+      
+    },
+    form: {
+      
+    }
   }
   export type SideMenuMenuProps = {
     links: LinkProps[]

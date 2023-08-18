@@ -33,9 +33,9 @@ export function defaultProps() {
   };
 }
 
-export default function NavBar(props: NavBarProps) {
+export default function NavBar({ navBar }: { navBar: NavBarProps}) {
 
-  const { links, favicon } = props;
+  const { links, favicon } = navBar;
 
   return (
     <Container sx={null}>

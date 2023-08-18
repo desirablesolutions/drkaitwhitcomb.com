@@ -1,17 +1,20 @@
-import { Manrope } from "next/font/google";
-
-const web_font = Manrope({
-  weight: "200",
-  subsets: ["latin"],
-});
 
 
-export default async function Container({ children, className  }: any) {
+export const Presets=  {
+  "Application": ({ children, className, lang }: any) => (
+    <html lang={lang}>
+    <body className={`${className}`}>{children}</body>
+  </html>
+  ) as React.ReactElement,
+}
+
+export default async function Container({ children, className, type  }: { type: "Application", className: string, children: any}) {
  
+  const ContainerSelecion = Presets.Application
 
   return (
-    <html lang="en">
-      <body className={`${web_font.className}  ${className ?? ""}`}>{children}</body>
-    </html>
+    <ContainerSelecion className={className}>
+      {children}
+    </ContainerSelecion>
   );
 }

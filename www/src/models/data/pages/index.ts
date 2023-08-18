@@ -5,10 +5,16 @@ export const pages: PageStoreType = {
   metaData: {
     layout: {
       navBar: {
+        favicon: {},
         links: [],
       },
       footer: {
-        links: [],
+        links: [
+          {
+            url: "#",
+            name: "Home",
+          }
+        ],
       },
     },
   },

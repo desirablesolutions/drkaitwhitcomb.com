@@ -1,13 +1,7 @@
-@import url("./hover.module.css");
+@import url("./super.module.css");
 @import url("./scrollbar.module.css");
-@import url("./super.css");
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-
-body {
-  color: inherit;
-}

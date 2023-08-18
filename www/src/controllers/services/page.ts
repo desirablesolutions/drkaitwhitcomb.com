@@ -12,6 +12,11 @@ export async function PageService() {
             const page = pages.data[id]
             return page
         },
+
+        getMetadata: async (): Promise<any> => {
+            const page = pages.metaData
+            return page
+        },
     
     }
     return { ...methods }

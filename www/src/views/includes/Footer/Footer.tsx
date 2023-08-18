@@ -1,52 +1,28 @@
-import { default as Container } from "../Footer/Container";
-import { default as AgencyTag } from "./AgencyTag";
-import { default as Links } from "./Links";
-import { default as EmailAddress } from "./EmailAddress"
-import { default as PhoneNumber } from "./PhoneNumber"
-import { default as Copyright } from "./Copyright"
-
 import type { FooterProps } from "@typings/index";
+import { safeProperties } from "@utils/index";
+import { default as AgencyTag } from "./AgencyTag";
+import { default as Container } from "./Container";
+import { default as Copyright } from "./Copyright";
+import { default as EmailAddress } from "./EmailAddress";
+import { default as Links } from "./Links";
+import { default as PhoneNumber } from "./PhoneNumber";
+import { defaultProps } from "./defaults";
 
-export function defaultProps(): FooterProps {
-  return {
-    copyright: [
-      "Made w/ ❤️ by Desirable Solutions",
-      "(407) 493-2238",
-      "take a deep breath",
-      "therapy@drkaitwhitcomb.com",
-    ],
-    tag: "©️ Dr. Kait Whitcomb LLC, 2023",
-    links: [
-      {
-        label: "Home",
-        url: "/",
-      },
-      {
-        label: "About",
-        url: "/about",
-      },
-      {
-        label: "Services",
-        url: "/services",
-      },
-      {
-        label: "Contact",
-        url: "/contact",
-      },
-    ],
-  };
-}
 
-export default function Footer({ copyright, tag }: FooterProps) {
-
+export default function Footer({ footer }: { footer: FooterProps }) {
+  
+  const { copyright, tag, phoneNumber, emailAddress, links } = safeProperties({
+    props: footer,
+    defaults: defaultProps,
+  });
 
   return (
     <Container>
-      <Copyright/>
-      <AgencyTag />
-      <PhoneNumber />
-      <EmailAddress />
-      <Links links={[{ label: "Home", url: "/" }]} />
+      <Copyright copyright={copyright} />
+      <AgencyTag tag={tag} />
+      <PhoneNumber phoneNumber={phoneNumber} />
+      <EmailAddress emailAddress={emailAddress} />
+      <Links links={links} />
     </Container>
   );
 }

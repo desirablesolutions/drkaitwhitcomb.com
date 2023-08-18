@@ -1,6 +1,7 @@
 import { classSet } from "@/controllers/utils";
 import { MasonryItemProps } from "@/models/typings";
 import { columnSpanSx } from "@styles/index";
+import { motion } from "framer-motion"
 
 export function defaultSx() {
   return `z-10 h-auto w-auto flex bg-[#C8C8C8] flex-grow 
@@ -18,10 +19,12 @@ export default function Item({
   const { span } = item
 
   return (
-    <div
+    <motion.div     initial={{ opacity: 0, scale: 0.99 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.5 }}
       className={classSet([defaultSx(), sx, columnSpanSx(span)])}
     >
       {children}
-    </div>
+    </motion.div>
   );
 }

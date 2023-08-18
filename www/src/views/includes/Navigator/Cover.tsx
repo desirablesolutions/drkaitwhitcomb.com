@@ -5,7 +5,7 @@ export default function NavigatorCover() {
         data-dial-toggle="speed-dial-menu-bottom-right"
         aria-controls="speed-dial-menu-bottom-right"
         aria-expanded="false"
-        className="flex shadow-black shadow-sm group-hover:shadow-lg ease-in-out items-center justify-center text-white bg-[#C3CFBD] rounded-full w-14 h-14 hover:bg-blackfocus:ring-4 focus:ring-black focus:outline-none"
+        className="flex shadow-black shadow-lg ease-in-out items-center justify-center text-white bg-[#C3CFBD] rounded-full w-14 h-14 hover:bg-blackfocus:ring-4 focus:ring-black focus:outline-none"
       >
 <svg
   xmlns="http://www.w3.org/2000/svg"

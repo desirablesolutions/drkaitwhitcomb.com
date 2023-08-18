@@ -15,3 +15,6 @@ export function classSet(classList: any) {
 export const INCREMENT_BY_ONE = (value: number): number => value + 1;
 
 export const DECREMENT_BY_ONE = (value: number): number => value -1;
+
+
+export const safeProperties = ({ props, defaults }: any): any => !props ? defaults() : {...defaults(), ...props};
