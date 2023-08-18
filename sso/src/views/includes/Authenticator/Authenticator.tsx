@@ -23,7 +23,7 @@ export function defaultProps(): AuthenticatorProps {
   };
 }
 
-export default function Authenticator(props: AuthenticatorProps) {
+export default function Authenticator({ authenticator }: {authenticator?: AuthenticatorProps}) {
   const { form, branding } = defaultProps();
 
   return (
