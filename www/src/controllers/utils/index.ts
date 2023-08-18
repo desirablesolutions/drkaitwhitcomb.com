@@ -5,7 +5,7 @@ import { twMerge } from "tailwind-merge";
 
 export const arrayExists = (arr: Weak<unknown[]>) => arr && arr?.length > 0;
 
-export const tuid = (offset?: number): number => Date.now() + (offset || 1);
+export const tuid = (offset?: number): number => Math.floor(Math.random() * Math.round(Date.now() as number))+ (offset || 1);
 
 
 export function classSet(classList: any) {

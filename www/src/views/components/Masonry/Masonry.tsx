@@ -32,27 +32,9 @@ export function renderItems(items: Weak<MasonryItemProps[]>) {
     return (
       <>
         {items?.map((item) => {
-          switch (item.type) {
-            case "image": {
-              return Templates.image(item);
-            }
-
-            case "text": {
-              return Templates.text(item);
-            }
-
-            case "data": {
-              return Templates.data(item);
-            }
-            case "header": {
-              return Templates.header(item);
-            }
-
-            case "callout": {
-              return Templates.callout(item);
-            }
-            
-          }
+          const SelectedTemplate =
+            Templates[item.type as keyof typeof Templates];
+          return SelectedTemplate({ item: item });
         })}
       </>
     );
@@ -86,17 +68,15 @@ export function renderGrids(grids: Weak<MasonryGridProps[]>) {
  * @return {string} The generated CSS class string.
  */
 
-
 export default function Masonry({ masonry }: { masonry: MasonryProps }) {
-
   const { grids, items, container } = !masonry
     ? defaultProps()
     : (masonry as MasonryProps);
 
   return (
     <Container container={!container ? defaultProps().container : container}>
-  {renderItems(items)}
-    {renderGrids(grids)}
-  </Container>
+      {renderItems(items)}
+      {renderGrids(grids)}
+    </Container>
   );
 }

@@ -1,7 +1,7 @@
 export default function ActionsBar() {
     return (
-        <section>
-        <div className="px-8 pt-5 pb-6 bg-black rounded-lg ">
+        <section className="sticky bottom-0 right-0 w-full">
+        <div className="px-8 pt-5 pb-6 rounded-lg backdrop-blur-lg ">
           <div className="flex flex-wrap items-center justify-between -mx-2">
             <div className="w-full px-2 mb-6 lg:w-auto lg:mb-0">
               <h4 className="mb-1 text-2xl font-bold leading-7 tracking-wide text-white">

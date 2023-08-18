@@ -1,3 +1,4 @@
+import { meta } from './../../../../www/src/models/configs/meta';
 export type ImageProps = {
     src?: string,
     className?: string
@@ -12,9 +13,17 @@ export type ImageProps = {
   }
   export type AuthenticatorProps = {
     branding: {
-      
+      title: string,
+      subTitle: string,
+      image: ImageProps,
+      url: string
     },
     form: {
+      formData: {
+        authentication: {},
+        footer: {}
+      },
+      header: {}
       
     }
   }

@@ -1,3 +1,4 @@
+import { AuthenticatorProps } from "@/models/typings";
 import { default as FormData } from "./FormData";
 
 export function Header({ title, subTitle }: any) {
@@ -13,11 +14,13 @@ export function Container({ children }: any) {
   return <div className="relative max-w-md mx-auto">{children}</div>;
 }
 
-export default function Form({ form }: any) {
+export default function Form({ form }: { form: AuthenticatorProps["form"]}) {
+
+  const { formData, header } = form;
   return (
     <Container>
-      <Header />
-      <FormData />
+      <Header header={header} />
+      <FormData formData={formData} />
     </Container>
   );
 }

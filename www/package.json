@@ -2,6 +2,13 @@
   "name": "drkaitwhitcomb-www",
   "version": "1.0.0",
   "private": true,
+  "browserslist": [
+    "chrome 64",
+    "edge 79",
+    "firefox 67",
+    "opera 51",
+    "safari 12"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,11 +16,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@effect/data": "^0.14.1",
-    "@effect/io": "^0.32.1",
-    "@trpc/client": "^10.37.1",
-    "@trpc/server": "^10.37.1",
-    "@twistezo/react-text-scramble": "^1.0.6",
     "@types/node": "20.3.1",
     "@types/react": "18.2.12",
     "@types/react-dom": "18.2.5",
@@ -24,22 +26,15 @@
     "flowbite": "^1.8.1",
     "flowbite-react": "^0.5.0",
     "framer-motion": "^10.12.18",
-    "google-map-react": "^2.2.1",
-    "hover.css": "^2.3.2",
-    "leaflet": "^1.9.4",
     "next": "13.4.5",
     "postcss": "8.4.24",
     "react": "18.2.0",
-    "react-confetti": "^6.1.0",
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "18.2.0",
-    "react-leaflet": "^4.2.1",
-    "react-markdown": "^8.0.7",
-    "remark-gfm": "^3.0.1",
+    "react-spinners": "^0.13.8",
     "spinners-react": "^1.0.7",
     "tailwind-merge": "^1.14.0",
     "tailwindcss": "3.3.2",
-    "typed-react-markdown": "^0.1.0",
     "typescript": "5.1.3"
   },
   "devDependencies": {

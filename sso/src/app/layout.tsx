@@ -11,11 +11,12 @@ export const metadata = {
   description: "Dr. Kait Whitcomb, LLC | Decentralized Web Manager",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+
   return (
     <html lang="en">
       <body className={inter.className + " bg-black overflow-x-hidden"}>

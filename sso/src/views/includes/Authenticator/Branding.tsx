@@ -1,4 +1,6 @@
-export default function Branding({ branding }: any) {
+import type { AuthenticatorProps } from "@/models/typings"
+
+export default function Branding({ branding }: { branding: AuthenticatorProps["branding"]}) {
 
   const { url, image } = branding
   

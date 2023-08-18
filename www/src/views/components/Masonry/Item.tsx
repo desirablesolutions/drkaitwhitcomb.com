@@ -5,8 +5,8 @@ import { motion } from "framer-motion"
 
 export function defaultSx() {
   return `z-10 h-auto w-auto flex bg-[#C8C8C8] flex-grow 
-  justify-center items-center m-1 cursor-pointer 
-  flex flex-col justify-center duration-500 ease-in-out  rounded-sm hover:shadow-lg shadow-black`;
+  justify-center items-center cursor-pointer 
+  flex flex-col justify-center duration-500 ease-in-out hover:opacity-80 rounded-sm shadow-black`;
 }
 
 export default function Item({
@@ -21,7 +21,7 @@ export default function Item({
   return (
     <motion.div     initial={{ opacity: 0, scale: 0.99 }}
     animate={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.5 }}
+    transition={{ duration: 0.67 }}
       className={classSet([defaultSx(), sx, columnSpanSx(span)])}
     >
       {children}

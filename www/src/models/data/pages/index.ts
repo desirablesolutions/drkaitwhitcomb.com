@@ -148,16 +148,11 @@ export const pages: PageStoreType = {
                 },
 
                 {
-                  type: "callout",
+                  type: "contact",
                   title: "Dr. Kait Whitcomb, LLC",
-                  subTitle: "therapy@drkaitwhitcomb.com",
-                  content: `
-                  
-
-
-
-Phone: (407) 493-2238   |   Fax: (407) 542-1804
-                  `,
+                  emailAddress: "therapy@drkaitwhitcomb.com",
+                  faxNumber: "(407) 542-1804",
+                  phoneNumber: "(407) 493-2238",
                 },
               ],
             },
