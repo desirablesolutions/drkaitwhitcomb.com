@@ -17,4 +17,9 @@ export const INCREMENT_BY_ONE = (value: number): number => value + 1;
 export const DECREMENT_BY_ONE = (value: number): number => value -1;
 
 
-export const safeProperties = ({ props, defaults }: any): any => !props ? defaults() : {...defaults(), ...props};
+export type SafePropertiesProps = {
+    props?: any,
+    defaults: any
+}
+
+export const safeProperties = <TypeParams=any>({ props, defaults }: SafePropertiesProps): TypeParams => !props ? defaults() : {...defaults(), ...props};

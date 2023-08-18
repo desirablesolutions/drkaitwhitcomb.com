@@ -6,6 +6,7 @@ import { classSet } from "@/controllers/utils";
 export function defaultSx() {
   return `grid`
 }
+
 export default function Grid({
   grid,
   children,

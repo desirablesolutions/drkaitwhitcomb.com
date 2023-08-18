@@ -9,7 +9,7 @@ export function Favicon({
   const { image, url } = favicon;
   return (
     <a className="inline-block mb-12" href={url}>
-      <img className="h-12" src={image?.src} alt="" />
+      <img className="object-cover h-20" src={image?.src} alt="" />
     </a>
   );
 }

@@ -1,6 +1,25 @@
 import Image from "@components/Image";
 import Item from "@components/Masonry/Item";
 
+
+
+
+
+
+
+
+
+export function ImageTemplate({ item }: any) {
+  return (
+        <Item item={item}>
+      <Image className="object-cover w-full h-full bg-center" {...item} />
+    </Item>
+  )
+
+}
+
+
+
 export const Templates = {
   image: (item: any) => (
     <Item item={item}>
@@ -19,9 +38,9 @@ export const Templates = {
   ),
   callout: (item: any) => (
     <Item item={item}>
-      <h1 className="px-6 py-2 text-4xl text-left text-white">{item.title}</h1>
+      <h1 className="px-6 py-2 text-2xl text-left text-white">{item.title}</h1>
       <h2 className="px-4 text-lg text-left text-white opacity-90">{item.subTitle}</h2>
-      <blockquote className="px-4 py-2 m-4 text-2xl text-left text-black">{item.content}</blockquote>
+      <blockquote className="px-4 py-2 m-4 text-xl text-left text-black">{item.content}</blockquote>
       <a className="p-4 text-2xl text-left text-gray-600 border-1" href={item?.link?.url ?? ""}>{item?.link?.label ?? ""}</a>
     </Item>
   ),

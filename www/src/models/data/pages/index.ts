@@ -5,6 +5,26 @@ export const pages: PageStoreType = {
   metaData: {
     layout: {
       sx: { container: {}, views: {} },
+      navigator: {
+        actions: [
+          {
+            url: "/",
+            label: "Home",
+          },
+          {
+            label: "About",
+            url: "/about",
+          },
+          {
+            label: "Services",
+            url: "/services",
+          },
+          {
+            label: "Contact",
+            url: "/contact",
+          },
+        ],
+      },
       navBar: {
         favicon: {
           image: {

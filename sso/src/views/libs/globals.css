@@ -4,7 +4,15 @@
 
 @import url("./scrollbar.module.css");
 
+:root {
+  --bg-image: url("/bg.svg")
+}
 
 body {
   background: white;
+  background-attachment: fixed;
+  background-size: cover;
+  object-fit: scale-down;
+  background-position: 33% 33%;
+  background-image: var(--bg-image);
 }
