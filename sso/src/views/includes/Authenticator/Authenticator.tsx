@@ -3,6 +3,10 @@ import Container from "./Container";
 import Form from "./Form";
 import type { AuthenticatorProps } from "@typings/index";
 
+
+
+
+
 export function defaultProps(): AuthenticatorProps {
   return {
     branding: {
@@ -15,11 +19,7 @@ export function defaultProps(): AuthenticatorProps {
     },
     form: {},
 
-    favicon: {
-      image: {
-        src: "",
-      },
-    },
+  
   };
 }
 

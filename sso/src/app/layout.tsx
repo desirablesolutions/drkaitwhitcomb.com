@@ -1,7 +1,7 @@
 import "@libs/globals.css";
-import { Thasadith } from "next/font/google";
+import { Manrope } from "next/font/google";
 
-const inter = Thasadith({
+const inter = Manrope({
   weight: "400",
   subsets: ["latin"],
 });
@@ -19,7 +19,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className + " bg-black overflow-x-hidden"}>
-      
         {children}
       </body>
     </html>
