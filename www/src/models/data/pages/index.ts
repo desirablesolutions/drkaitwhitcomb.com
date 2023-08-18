@@ -4,16 +4,51 @@ import { images } from "@assets/images";
 export const pages: PageStoreType = {
   metaData: {
     layout: {
+      sx: { container: {}, views: {} },
       navBar: {
-        favicon: {},
-        links: [],
-      },
-      footer: {
+        favicon: {
+          image: {
+            alt: "logo",
+            src: "https://static.wixstatic.com/media/254c65_f4b64d6d825546f186dc0a4358ffa178~mv2.png/v1/fill/w_346,h_154,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Kait%20Whitcomb%20logo-04.png",
+          },
+        },
         links: [
           {
             url: "#",
             name: "Home",
-          }
+          },
+          {
+            name: "About",
+            url: "/about",
+          },
+          {
+            name: "Services",
+            url: "/services",
+          },
+          {
+            name: "Contact",
+            url: "/contact",
+          },
+        ],
+      },
+      footer: {
+        links: [
+          {
+            url: "/",
+            name: "Home",
+          },
+          {
+            name: "About",
+            url: "/about",
+          },
+          {
+            name: "Services",
+            url: "/services",
+          },
+          {
+            name: "Contact",
+            url: "/contact",
+          },
         ],
       },
     },
@@ -80,11 +115,11 @@ export const pages: PageStoreType = {
                   title: `Individual Therapy from a Licensed Psychologist`,
                   link: {
                     label: "Learn More",
-                    url: "/about"
+                    url: "/about",
                   },
                   content: `I work with adult clients to help them find the healing they’re looking for. I’m glad you’re here!
 
-                  `
+                  `,
                 },
                 {
                   type: "image",
@@ -94,7 +129,7 @@ export const pages: PageStoreType = {
 
                 {
                   type: "callout",
-title: "Dr. Kait Whitcomb, LLC",
+                  title: "Dr. Kait Whitcomb, LLC",
                   subTitle: "therapy@drkaitwhitcomb.com",
                   content: `
                   
@@ -102,7 +137,7 @@ title: "Dr. Kait Whitcomb, LLC",
 
 
 Phone: (407) 493-2238   |   Fax: (407) 542-1804
-                  `
+                  `,
                 },
               ],
             },
@@ -176,7 +211,7 @@ If you think I might be a good fit, I’d love to hear from you. Please call or 
     },
     contact: {
       data: {
-        masonry: { 
+        masonry: {
           container: {
             gap: 1,
             rows: 1,

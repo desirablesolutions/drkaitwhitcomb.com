@@ -1,46 +1,21 @@
 import type { NavBarProps } from "@typings/index";
 import { default as Favicon } from "./Favicon";
 import { default as Links } from "./Links";
-
+import { safeProperties } from "@/controllers/utils";
 import Container from "./Container";
+import { defaultProps } from "./defaults";
 
-export function defaultProps() {
-  return {
-    favicon: {
-      image: {
-        alt: "logo",
-        src: "https://static.wixstatic.com/media/254c65_f4b64d6d825546f186dc0a4358ffa178~mv2.png/v1/fill/w_346,h_154,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Kait%20Whitcomb%20logo-04.png",
-      },
-    },
-    links: [
-      {
-        title: "Home",
-        url: "/",
-      },
-      {
-        title: "About Me",
-        url: "/about",
-      },
-      {
-        title: "Services",
-        url: "/services",
-      },
-      {
-        title: "Contact",
-        url: "/contact",
-      },
-    ],
-  };
-}
-
-export default function NavBar({ navBar }: { navBar: NavBarProps}) {
-
-  const { links, favicon } = navBar;
+export default function NavBar({ navBar }: { navBar: NavBarProps }) {
+  
+  const { links, favicon } = safeProperties({
+    props: navBar,
+    defaults: defaultProps,
+  });
 
   return (
-    <Container sx={null}>
-      <Favicon favicon={defaultProps().favicon}/>
-      <Links links={defaultProps().links}/>
+    <Container>
+      <Favicon favicon={favicon} />
+      <Links links={links} />
     </Container>
   );
 }

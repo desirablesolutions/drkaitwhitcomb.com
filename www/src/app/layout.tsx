@@ -35,7 +35,7 @@ export default async function RootLayout({
       <NavBar navBar={layout.navBar} />
       {children}
       <Footer footer={layout.footer} />
-      <Navigator />
+      <Navigator navigator={layout.navigator} />
     </Container>
   );
 }

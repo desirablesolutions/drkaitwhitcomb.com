@@ -1,9 +1,4 @@
 
-/* Firefox */
-* {
-
-  }
-  
   /* Chrome, Edge and Safari */
   *::-webkit-scrollbar {
     width: 10px;
@@ -13,10 +8,7 @@
     border-radius: 3px;
     background-color: var(--color-primary);;
   }
-  
-  *::-webkit-scrollbar-track:hover {
-    background-color: #B8C0C2;
-  }
+
   
   *::-webkit-scrollbar-track:active {
     background-color: #B8C0C2;

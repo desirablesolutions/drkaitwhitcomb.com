@@ -11,6 +11,8 @@
   "dependencies": {
     "@effect/data": "^0.14.1",
     "@effect/io": "^0.32.1",
+    "@trpc/client": "^10.37.1",
+    "@trpc/server": "^10.37.1",
     "@twistezo/react-text-scramble": "^1.0.6",
     "@types/node": "20.3.1",
     "@types/react": "18.2.12",
