@@ -244,9 +244,7 @@ export default function Assets() {
                     <textarea
                       className="block w-full h-56 px-3 py-4 text-sm font-medium bg-transparent border border-gray-400 rounded-lg outline-none resize-none text-gray-50 placeholder-gray-50 hover:border-white focus:border-green-500"
                       id="formInput1-9"
-                      type="text"
                       placeholder="Lorem ipsum dolor sit amet"
-                      defaultValue={""}
                     />
                   </div>
                 </div>
