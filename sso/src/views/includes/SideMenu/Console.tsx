@@ -66,7 +66,7 @@ export function SubMenu({
     title: SideMenuProps["console"]["subMenu"]["title"];
   }) {
     return (
-      <span className="block mb-8 text-xs font-semibold text-gray-400 uppercase">
+      <span className="block mb-8 text-md font-semibold text-white uppercase">
         {title}
       </span>
     );

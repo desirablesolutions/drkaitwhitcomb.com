@@ -1,26 +1,27 @@
 import Image from "@components/Image";
 import Item from "@components/Masonry/Item";
-
+import FaxSVG from "@components/FaxSVG"
+import PhoneSVG from "@components/PhoneSVG"
 
 
 export function CalloutTemplate({ item }: any) {
   return (
-    <Item sx="items-center p-2" item={item}>
+    <Item sx="flex-start p-2" item={item}>
     <h1 className="w-full text-2xl text-left text-white">{item.title}</h1>
     <h2 className="text-lg text-left text-white opacity-90">{item.subTitle}</h2>
     <blockquote className="text-lg text-left text-black">{item.content}</blockquote>
-    <a className="text-2xl text-left text-gray-600 border-1" href={item?.link?.url ?? ""}>{item?.link?.label ?? ""}</a>
+    <a className="text-md text-left text-gray-200 border-white border-1" href={item?.link?.url ?? ""}>{item?.link?.label ?? ""}</a>
   </Item>
   )
 }
 
 export function ContactTemplate({ item }: any) {
   return (
-    <Item item={item}>
+    <Item sx="items-center mb-2" item={item}>
     <h1 className="px-6 py-2 text-2xl text-left text-white">{item.title}</h1>
     <h2 className="px-4 text-lg text-left text-white opacity-90">{item.emailAddress}</h2>
-    <blockquote className="text-xl text-left text-black ">{item.phoneNumber}</blockquote>
-    <blockquote className="text-xl text-left text-black ">{item.faxNumber}</blockquote>
+    <blockquote className="text-xl text-left text-black flex flex-row">Phone {item.phoneNumber}</blockquote>
+    <blockquote className="text-xl text-left text-black flex flex-row">Fax {item.faxNumber}</blockquote>
   </Item>
   )
 }
@@ -48,7 +49,7 @@ export function DataTemplate({ item }: any) {
 export function HeaderTemplate({ item }: any) {
   return (
     <Item sx="bg-black" item={item} >
-      <h1 className="p-2 text-3xl text-center text-white">{item.content}</h1>
+      <h1 className="p-2 text-2xl tracking-tight text-center text-white">{item.content}</h1>
     </Item>
   )
 }

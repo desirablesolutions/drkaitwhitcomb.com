@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 export function defaultSx() {
   return `z-10 h-auto w-auto flex bg-[#C8C8C8] flex-grow 
-  justify-center items-center 
+ justify-stretch
   flex flex-col justify-center duration-500 ease-in-out hover:opacity-80 rounded-sm shadow-black`;
 }
 
