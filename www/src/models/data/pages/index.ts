@@ -35,7 +35,7 @@ export const pages: PageStoreType = {
         },
         links: [
           {
-            url: "#",
+            url: "/",
             name: "Home",
           },
           {

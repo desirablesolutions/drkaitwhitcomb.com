@@ -20,7 +20,7 @@ export default function Item({
 
   return (
     <motion.div     initial={{ opacity: 0, scale: 0.97 }}
-    animate={{ opacity: 1, scale: 1.0 }}
+    animate={{ opacity: 1, scale: 0.999 }}
     transition={{ duration: 0.7 }}
       className={classSet([defaultSx(), sx, orderSx(order), columnSpanSx(span)])}
     >

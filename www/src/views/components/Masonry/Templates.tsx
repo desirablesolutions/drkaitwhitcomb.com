@@ -5,11 +5,11 @@ import Item from "@components/Masonry/Item";
 
 export function CalloutTemplate({ item }: any) {
   return (
-    <Item item={item}>
-    <h1 className="px-6 py-2 text-2xl text-left text-white">{item.title}</h1>
-    <h2 className="px-4 text-lg text-left text-white opacity-90">{item.subTitle}</h2>
-    <blockquote className="px-4 py-2 m-4 text-xl text-left text-black">{item.content}</blockquote>
-    <a className="p-4 text-2xl text-left text-gray-600 border-1" href={item?.link?.url ?? ""}>{item?.link?.label ?? ""}</a>
+    <Item sx="items-center p-2" item={item}>
+    <h1 className="w-full text-2xl text-left text-white">{item.title}</h1>
+    <h2 className="text-lg text-left text-white opacity-90">{item.subTitle}</h2>
+    <blockquote className="text-lg text-left text-black">{item.content}</blockquote>
+    <a className="text-2xl text-left text-gray-600 border-1" href={item?.link?.url ?? ""}>{item?.link?.label ?? ""}</a>
   </Item>
   )
 }

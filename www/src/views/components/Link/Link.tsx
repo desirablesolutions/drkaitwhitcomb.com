@@ -1,6 +1,6 @@
 export default function Link({ children, ...props}: any) {
     return (
-        <a {...props}>
+        <a href={props.url}>
             {children}
         </a>
     )
