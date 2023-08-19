@@ -27,7 +27,7 @@ export function Menu({ menu }: { menu: SideMenuProps["console"]["menu"] }) {
           return (
             <li key={Date.now()} className="mb-4">
               <a
-                className="flex items-center p-3 text-black bg-green-200 rounded-md cursor-pointer hover:shadow-2xl shadow-white"
+                className="flex items-center p-2 text-black bg-green-200 rounded-md cursor-pointer bg-opacity-70 hover:shadow-lg shadow-white"
                 href="#"
               >
                 <MenuSVG />

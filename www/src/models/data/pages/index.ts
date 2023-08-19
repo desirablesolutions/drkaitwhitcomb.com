@@ -97,6 +97,7 @@ export const pages: PageStoreType = {
               columns: 2,
               gap: 1,
               span: 2,
+              order: 1,
 
               items: [
                 {
@@ -129,6 +130,7 @@ export const pages: PageStoreType = {
               columns: 1,
               gap: 1,
               span: 1,
+              order: 0,
 
               items: [
                 {

@@ -28,7 +28,7 @@ export function ContactTemplate({ item }: any) {
 export function ImageTemplate({ item }: any) {
   return (
         <Item item={item}>
-      <Image className="order-1 object-cover w-full h-full bg-center rounded-sm" {...item} />
+      <Image className="object-cover w-full h-full bg-center rounded-sm" {...item} />
     </Item>
   )
 

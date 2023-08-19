@@ -49,3 +49,9 @@ export function columnSpanSx(span: number): TailwindClassList {
 
   return `${TailwindColSpanPresets[DECREMENT_BY_ONE(span % TailwindColSpanPresets.length)]}`;
 }
+
+export function orderSx(order: number) {
+  const presets  = ["order-first lg:order-none", "order-2 lg:order-none", "order-3 lg:order-none"];
+
+  return `${presets[(order % presets.length)]}`
+}

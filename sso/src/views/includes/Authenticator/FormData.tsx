@@ -11,7 +11,7 @@ export function SubmitAction({
 
   return (
     <a
-      className="flex items-center justify-center w-full py-4 mb-6 font-semibold text-white transition duration-200 bg-black rounded-lg bg-opacity-60"
+      className="flex items-center justify-center w-full py-4 mb-6 font-semibold text-white transition duration-200 bg-black rounded-lg bg-opacity-60 hover:bg-opacity-100"
       href={url}
     >
       <div className="w-6">{icon}</div>

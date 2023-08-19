@@ -15,11 +15,13 @@ export type LinkProps = {
 
 export type MasonryItemProps = MasonryItemTypes & {
   span: number,
+  order: number
 }
 
 export type MasonryGridProps = MasonryProps & {
   span: number;
   gap: number;
+  order: number,
   columns: number;
   rows: number;
   grids: MasonryGridProps[];
