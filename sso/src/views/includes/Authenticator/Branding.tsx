@@ -11,7 +11,7 @@ export default function Branding({ branding }: { branding: AuthenticatorProps["b
       >
         <img
           className="block"
-          src={image?.src}
+          src={image.src}
           alt=""
         />
       </a>

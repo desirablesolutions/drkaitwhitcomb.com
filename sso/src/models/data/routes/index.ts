@@ -20,7 +20,7 @@ export function routes() {
                         formData: {
                           authentication: {
                                 submitAction: {
-                                  url: "/",
+                                  url: "/space",
                                   label: "Login",
                                   icon: "✒️"
                                 } ,
@@ -31,8 +31,11 @@ export function routes() {
                                 } 
                           },
                           footer: {
-                            description: "Footer",
-                            link: ""
+                            description: "Your Decentralized Web Manager",
+                            link: {
+                              label: "Help",
+                              url: "https://desirable.solutions/help",
+                            }
                           },
                         },
 
