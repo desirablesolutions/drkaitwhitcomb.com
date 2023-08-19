@@ -23,7 +23,7 @@ export function defaultProps(): SideMenuProps {
             url: "#",
           },
               {
-           label: "Storage",
+           label: "Status",
             url: "#",
           },
               {

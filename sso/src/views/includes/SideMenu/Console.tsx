@@ -31,7 +31,7 @@ export function Menu({ menu }: { menu: SideMenuProps["console"]["menu"] }) {
             <li key={Date.now()} className="mb-4">
               <a
                 className="flex items-center p-2 text-black bg-green-200 rounded-md cursor-pointer bg-opacity-70 hover:shadow-lg shadow-white"
-                href="#"
+                href={link.url}
               >
 
                 <span className="ml-4 text-sm font-semibold">{link.label}</span>
