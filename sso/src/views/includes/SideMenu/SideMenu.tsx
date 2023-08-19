@@ -16,10 +16,18 @@ export function defaultProps(): SideMenuProps {
         url: "/"
       },
       subMenu: {
-        title: "Panels",
+        title: "Activity",
         links: [
           {
-           label: "Dashboard",
+           label: "v12.0.0",
+            url: "#",
+          },
+              {
+           label: "Storage",
+            url: "#",
+          },
+              {
+           label: "Usage",
             url: "#",
           }
         ]
@@ -29,23 +37,27 @@ export function defaultProps(): SideMenuProps {
         links: [
           {
            label: "Dashboard",
-            url: "#",
+            url: "/spaces",
           },
           {
             label: "Websites",
-             url: "#",
+             url: "/spaces/websites",
            },
            {
             label: "Themeing",
-             url: "#",
+             url: "/spaces/themes",
            },
            {
             label: "Domains",
-             url: "#",
+             url: "/spaces/domains",
+           },
+           {
+            label: "Profiles",
+             url: "/spaces/profiles",
            },
            {
             label: "Help",
-             url: "#",
+             url: "https://desirable.solutions/help",
            }
         ]
       }
@@ -53,7 +65,7 @@ export function defaultProps(): SideMenuProps {
     footer: {
       actions: [
         {
-          label: "Profile",
+          label: "Coming Soon",
           url: "#",
         }
       ]

@@ -7,9 +7,9 @@ import PhoneSVG from "@components/PhoneSVG"
 export function CalloutTemplate({ item }: any) {
   return (
     <Item sx="flex-start p-2" item={item}>
-    <h1 className="w-full text-2xl text-left text-white">{item.title}</h1>
+    <h1 className="w-full text-xl text-left text-white m-1 p-1 tracking-tight">{item.title}</h1>
     <h2 className="text-lg text-left text-white opacity-90">{item.subTitle}</h2>
-    <blockquote className="text-lg text-left text-black">{item.content}</blockquote>
+    <blockquote className="text-lg text-left text-black p-1 m-1">{item.content}</blockquote>
     <a className="text-md text-left text-gray-200 border-white border-1" href={item?.link?.url ?? ""}>{item?.link?.label ?? ""}</a>
   </Item>
   )
@@ -38,7 +38,7 @@ export function ImageTemplate({ item }: any) {
 
 export function DataTemplate({ item }: any) {
   return (
-    <Item  item={...item}>
+    <Item sx="flex-start" item={item}>
       <h1 className="text-4xl">{item.title}</h1>
       <blockquote>{item.content}</blockquote>
     </Item>
