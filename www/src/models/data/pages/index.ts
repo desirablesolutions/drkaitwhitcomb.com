@@ -78,8 +78,12 @@ export const pages: PageStoreType = {
     home: {
       metaData: {
         title: "Dr. Kait Whitcomb | Licensed Psychologist",
-icon: "/icons/android-chrome-192x192",
         themeColor: "#C3CFBD",
+        icons: {
+          icon: '/icons/apple-touch-icon.png',
+          apple: '/icons/apple-touch-icon.png',
+
+        },
         description: "Individual therapy from a licensed psychologist",
       },
       data: {
