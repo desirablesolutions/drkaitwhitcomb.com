@@ -31,7 +31,7 @@ export default async function RootLayout({
   const { layout } = await getMetadata();
 
   return (
-    <Container type="Application" className={`${web_font.className} font-thin tracking-wide bg-white`}   >
+    <Container type="Application" className={`${web_font.className} dark:bg-black font-thin tracking-tight bg-white `}   >
       <NavBar navBar={layout.navBar} />
       {children}
       <Footer footer={layout.footer} />
