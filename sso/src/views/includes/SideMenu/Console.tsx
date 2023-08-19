@@ -78,10 +78,10 @@ export function SubMenu({
       return (
         <li>
           <a
-            className="flex items-center p-4 text-gray-300 hover:bg-gray-800 rounded-xl"
+            className="flex items-center p-2 text-gray-300 hover:bg-gray-800 rounded-xl"
             href="#"
           >
-            <div className="w-2 h-2 mr-2 bg-blue-300 rounded-full" />
+            <div className="w-2 h-2 mr-2 bg-green-300 rounded-full" />
             <span className="text-sm font-semibold">{label}</span>
           </a>
         </li>
