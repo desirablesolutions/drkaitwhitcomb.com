@@ -20,7 +20,7 @@ export function routes() {
                         formData: {
                           authentication: {
                                 submitAction: {
-                                  url: "/space",
+                                  url: "/spaces",
                                   label: "Login",
                                   icon: "✒️"
                                 } ,
