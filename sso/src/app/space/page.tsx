@@ -11,9 +11,7 @@ export default async function Spaces() {
     <div className="col-span-5 lg:col-span-4">
       <NavBar/>
       <Banner />
-      <ComplexCardRow />
-      <DataTable />
-      <ActionsBar />
+
     </div>
   );
 }

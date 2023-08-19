@@ -3,14 +3,15 @@ import Item from "@components/Masonry/Item";
 import FaxSVG from "@components/FaxSVG"
 import PhoneSVG from "@components/PhoneSVG"
 
-
+import ArrowSVG from "@components/ArrowSVG"
 export function CalloutTemplate({ item }: any) {
   return (
     <Item sx="flex-start p-2" item={item}>
     <h1 className="w-full text-xl text-left text-white m-1 p-1 tracking-tight">{item.title}</h1>
     <h2 className="text-lg text-left text-white opacity-90">{item.subTitle}</h2>
     <blockquote className="text-lg text-left text-black p-1 m-1">{item.content}</blockquote>
-    <a className="text-md text-left text-gray-200 border-white border-1" href={item?.link?.url ?? ""}>{item?.link?.label ?? ""}</a>
+    <a className="text-md text-left flex flex-row text-white m-1 p-1  border-white border-1" href={item?.link?.url ?? ""}>
+      {item?.link?.label ?? ""}{!item?.link?.label ? <></>: <ArrowSVG/>} </a>
   </Item>
   )
 }

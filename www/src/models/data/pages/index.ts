@@ -137,6 +137,7 @@ export const pages: PageStoreType = {
               items: [
                 {
                   type: "callout",
+                  sx: "flex-start content-start",
                   title: `Individual Therapy from a Licensed Psychologist`,
                   link: {
                     label: "Learn More",
@@ -270,21 +271,14 @@ If you think I might be a good fit, I’d love to hear from you. Please call or 
                    Please call or email me to schedule your free consultation today.`,
                 },
                 {
-                  type: "callout",
+                  type: "contact",
                   span: 1,
-                  subTitle: "therapy@drkaitwhitcomb.com",
-                  title: `870 Clark St. ste #1020
-
-                  Oviedo, FL 32765
-                  `,
-                  content: `
-                
-
-Tel  (407) 493-2238 | 
-
-Fax (407) 542-1804
-
-`,
+                  emailAddress: "therapy@drkaitwhitcomb.com",
+                  phoneNumber: "(407) 493-2238",
+                  faxNumber: "(407) 542-1804",
+                  title: `870 Clark St. ste 
+                          #1020 Oviedo, FL 32765 `,
+       
                 },
               ],
             },

@@ -38,7 +38,7 @@ export type MasonryProps = {
   grids: MasonryGridProps[];
   items: MasonryItemProps[];
   container: MasonryContainerProps;
-};
+} & { sx? : string };
 
 
 
