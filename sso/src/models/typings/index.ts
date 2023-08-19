@@ -1,7 +1,9 @@
-import type { ImageType } from "t4-types-ts/dist/types"
+// import type { ImageType, LinkType, FaviconType } from "t4-types-ts"
 
-export type ImageProps = ImageType
-
+export type ImageProps = {
+    src?: string,
+    className?: string
+  }
   export type FaviconProps = {
     image?: ImageProps,
     url?: string
