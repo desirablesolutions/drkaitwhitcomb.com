@@ -5,3 +5,6 @@ export function spacesConfig() {
         }
     }
 }
+
+
+export const password = "Piranesi%Wanders4years#"
