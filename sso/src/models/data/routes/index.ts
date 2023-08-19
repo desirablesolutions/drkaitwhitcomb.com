@@ -19,7 +19,16 @@ export function routes() {
                         },
                         formData: {
                           authentication: {
-                                  
+                                submitAction: {
+                                  url: "/",
+                                  label: "Login",
+                                  icon: "✒️"
+                                } ,
+                                input: {
+                                  label: "Password",
+                                  password: true,
+                                  warning: ""
+                                } 
                           },
                           footer: {
                             description: "Footer",

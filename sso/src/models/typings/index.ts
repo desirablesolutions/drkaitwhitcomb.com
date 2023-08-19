@@ -1,8 +1,7 @@
-import { meta } from './../../../../www/src/models/configs/meta';
-export type ImageProps = {
-    src?: string,
-    className?: string
-  }
+import type { ImageType } from "t4-types-ts/dist/types"
+
+export type ImageProps = ImageType
+
   export type FaviconProps = {
     image?: ImageProps,
     url?: string
@@ -20,8 +19,14 @@ export type ImageProps = {
     },
     form: {
       formData: {
-        authentication: {},
-        footer: {}
+        authentication: {
+          submitAction: any,
+          input: any
+        },
+        footer: {
+          description: string,
+          link: LinkProps
+        }
       },
       header: {
         subTitle: string,
