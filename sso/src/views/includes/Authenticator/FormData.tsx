@@ -66,7 +66,7 @@ export function Footer({
 }) {
   const { description, link } = footer;
   return (
-    <p className="font-medium text-center">
+    <p className="flex flex-col font-medium text-center">
       <span className="text-black">{description}</span>
       <a className="inline-block text-blue-500 hover:underline" href={link.url}>
         {link.label}

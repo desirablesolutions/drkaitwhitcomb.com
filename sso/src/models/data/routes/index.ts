@@ -27,11 +27,11 @@ export function routes() {
                                 input: {
                                   label: "Password",
                                   password: true,
-                                  warning: ""
+                                  warning: "Password is case-sensitive"
                                 } 
                           },
                           footer: {
-                            description: "Your Decentralized Web Manager",
+                            description: "Kait's Decentralized Web Manager",
                             link: {
                               label: "Help",
                               url: "https://desirable.solutions/help",

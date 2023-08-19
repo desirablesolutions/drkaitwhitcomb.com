@@ -1,6 +1,6 @@
 
 import type { AuthenticatorProps } from "@/models/typings";
-export function defaultProps(): AuthenticatorProps {
+export function defaultProps(): any {
     return {
       branding: {
         title: "Dr. Kait Whitcomb, LLC",
