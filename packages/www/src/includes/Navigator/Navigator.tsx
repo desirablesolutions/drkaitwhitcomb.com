@@ -44,7 +44,7 @@ function effectiveIsDark(mode: ThemeMode): boolean {
 
 function SunIcon() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 rounded-full h-5">
       <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" />
       <path fillRule="evenodd" d="M12 2a.75.75 0 0 1 .75.75V5a.75.75 0 0 1-1.5 0V2.75A.75.75 0 0 1 12 2Zm0 17a.75.75 0 0 1 .75.75V22a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 19Zm10-7a.75.75 0 0 1-.75.75H19a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 22 12ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12Zm12.364 6.364a.75.75 0 0 1-1.06 0l-1.591-1.591a.75.75 0 1 1 1.06-1.06l1.591 1.59a.75.75 0 0 1 0 1.061Zm-9.778-9.778a.75.75 0 0 1-1.06 0L5.935 6.995a.75.75 0 0 1 1.06-1.06l1.591 1.591a.75.75 0 0 1 0 1.06Zm9.778-6.364a.75.75 0 0 1 0 1.06l-1.591 1.591a.75.75 0 1 1-1.06-1.06l1.59-1.591a.75.75 0 0 1 1.061 0Zm-9.778 9.778a.75.75 0 0 1 0 1.06l-1.591 1.591a.75.75 0 0 1-1.06-1.06l1.591-1.59a.75.75 0 0 1 1.06 0Z" clipRule="evenodd" />
     </svg>
@@ -53,7 +53,7 @@ function SunIcon() {
 
 function MoonIcon() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 rounded-full h-5">
       <path d="M21.752 15.002A9.718 9.718 0 0 1 12.001 22C6.477 22 2 17.523 2 12c0-4.03 2.37-7.5 5.78-9.053.414-.19.88.136.8.582a8.5 8.5 0 0 0 10.89 10.89c.446-.08.772.386.582.8Z" />
     </svg>
   );

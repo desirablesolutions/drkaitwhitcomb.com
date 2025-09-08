@@ -1,13 +1,15 @@
 // Aggregates Keystatic-managed content pages into the shape previously provided by pages.json
 // Source files: src/content/pages/*.json (each file may define one or more top-level page keys)
+import { getCollection, getEntry } from 'astro:content';
 
+const pages = await getCollection("pages");
 const modules = import.meta.glob<{ default: Record<string, any> }>(
   "/src/content/pages/*.json",
   { eager: true }
 );
 
 function basename(path: string) {
-  const name = path.split("/").pop() || "";
+  const name = path.split("/").pop() || ""; // eslint-disable-line
   return name.replace(/\.json$/i, "");
 }
 
@@ -32,5 +34,5 @@ function mergePages() {
   return out;
 }
 
-const pages = mergePages();
-export default pages;
+const Tpages = mergePages();
+export default Tpages;

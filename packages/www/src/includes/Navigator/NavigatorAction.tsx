@@ -1,5 +1,5 @@
 export function NavigatorAction({ label, url, icon, onClick, open, className }: any) {
-    const baseClasses = "z-50 flex items-center justify-center w-auto h-8 px-2 text-black duration-200 bg-white border border-gray-700 rounded-md shadow-sm hover:shadow-lg shadow-black bg-opacity-60 backdrop-blur-sm dark:border-gray-600 dark:hover:text-white dark:text-gray-400 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400 transition-opacity";
+    const baseClasses = "z-50 flex items-center justify-center w-auto h-8 px-2 text-black duration-200 bg-white border border-gray-700 rounded-full shadow-sm hover:shadow-md shadow-black bg-opacity-40 backdrop-blur-md dark:border-gray-600 dark:hover:text-white dark:text-gray-400 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400 transition-opacity";
     const visibility = open
         ? "opacity-100 pointer-events-auto"
         : "opacity-0 pointer-events-none";

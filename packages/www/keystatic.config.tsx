@@ -5,7 +5,8 @@ export default config({
     kind: "cloud",
   },
   cloud: {
-    project: 'drkaitwhitcomb/drkaitwhitcomb',
+    project: "drkaitwhitcomb/drkaitwhitcomb",
+
   },
   ui: {
     brand: {
@@ -20,6 +21,7 @@ export default config({
     },
 
     navigation: {
+      content: ["pages", "resources"],
       configuration: [
         "themes",
         "footer",
@@ -28,7 +30,7 @@ export default config({
         "images",
         "metadata",
       ],
-      content: ["resources", "pages"],
+
     },
   },
   singletons: {
@@ -190,7 +192,22 @@ export default config({
         slug: fields.slug({ name: { label: "Key" } }),
         metaData: fields.object({
           title: fields.slug({ name: { label: "Title" } }),
+
         }),
+        data: fields.array(
+          fields.object({
+            title: fields.slug({ name: { label: "Title" } }),
+            content: fields.markdoc({
+              label: "Content",
+              options: {
+                image: {
+                  directory: "public/assets/images/pages",
+                  publicPath: "/assets/images/pages/",
+                },
+              },
+            }),
+          })
+        ),
       },
     }),
     resources: collection({
@@ -211,23 +228,6 @@ export default config({
         }),
       },
     }),
-    data: collection({
-      label: "Data",
-      slugField: "title",
-      path: "src/content/data/*",
-      format: { contentField: "content" },
-      schema: {
-        title: fields.slug({ name: { label: "Title" } }),
-        content: fields.markdoc({
-          label: "Content",
-          options: {
-            image: {
-              directory: "public/assets/images/data",
-              publicPath: "/assets/images/data/",
-            },
-          },
-        }),
-      },
-    }),
+
   },
 });
